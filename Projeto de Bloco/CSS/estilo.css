@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "BADABB__";
+    src: url("BADABB__.ttf")
+}
+
+body{
+    background-color: teal;
+}
+
+.divGeral{
+    display: inline;
+}
+
+#colunas{
+    height: 100%;
+    width: 100%;
+}
+
+#colunaEsquerda{
+    background-color: red;
+    padding: 0 5%;
+}
+
+#colunaCentro{
+    background-color: blue;
+}
+
+#colunaDireita{
+    background-color: red;
+    padding: 0 5%;
+    left: 0;
+}
+
+.divMenuPrincipal{
+    background-color: rgb(198, 235, 201);
+    height: 100px;
+    width: 100%;
+}
+
+.ulMenuPrincipal{
+    text-align: center;
+    word-spacing: 150px;
+    position: relative;
+    top: 25px;
+    /* Vai da kao isso aqui, tem que deixar automático */
+}
+
+.liMenuPrincipal{
+    display: inline;
+}
+
+.aMenuPrincipal{
+    text-decoration: none;
+    color: black;
+    font-family: "BADABB__";
+    font-size: 50px;
+}
