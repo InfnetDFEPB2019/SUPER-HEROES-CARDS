@@ -1,57 +1,64 @@
-@font-face{
-    font-family: "BADABB__";
-    src: url("BADABB__.ttf")
-}
-
 body{
-    background-color: teal;
+    background-color: rgba(121, 128, 128, 0.356);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.divGeral{
-    display: inline;
-}
-
-#colunas{
-    height: 100%;
+nav{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    transition: 0.4s;
     width: 100%;
-}
+    z-index: 99;
 
-#colunaEsquerda{
-    background-color: red;
-    padding: 0 5%;
-}
-
-#colunaCentro{
-    background-color: blue;
-}
-
-#colunaDireita{
-    background-color: red;
-    padding: 0 5%;
+    font-size: 30px;
+    top: 0;
     left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(37, 26, 26);
 }
 
-.divMenuPrincipal{
-    background-color: rgb(198, 235, 201);
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li img{
+    border-radius: 100%;
+    padding: 0;
     height: 100px;
+    width: auto;
+}
+
+li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main div img{
     width: 100%;
 }
 
-.ulMenuPrincipal{
-    text-align: center;
-    word-spacing: 150px;
+main{
     position: relative;
-    top: 25px;
-    /* Vai da kao isso aqui, tem que deixar automático */
+    margin: 0 auto;
+    margin-top: 116px;
+    width: 80%;
+    height: 90vh;
+    background-color: rgb(136, 138, 221);
 }
 
-.liMenuPrincipal{
-    display: inline;
-}
 
-.aMenuPrincipal{
-    text-decoration: none;
-    color: black;
-    font-family: "BADABB__";
-    font-size: 50px;
+
+.areaPrincipal{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
