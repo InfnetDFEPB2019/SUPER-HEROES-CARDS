@@ -1,42 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Super Trunfo Heros por enquanto né?</title>
-        <link rel="stylesheet" href="CSS/estilo.css">
-    </head>
-
-    <body>
-        <div class="divMenuPrincipal" class="divGeral">
-            <nav>
-                <ul class="ulMenuPrincipal">
-                    <li class="liMenuPrincipal"><a class="aMenuPrincipal" href="#">Home</a></li>
-                    <li class="liMenuPrincipal"><a class="aMenuPrincipal" href="HTML/jogar.html" target="_blank">Jogar</a></li>
-                    <li class="liMenuPrincipal"><a class="aMenuPrincipal" href="HTML/cartas.html" target="_blank">Cartas</a></li>
-                    <li class="liMenuPrincipal"><a class="aMenuPrincipal" href="HTML/sobre.html" target="_blank">Sobre</a></li>
-                    <li class="liMenuPrincipal"><a class="aMenuPrincipal" href="HTML/contato.html" target="_blank">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="colunas">
-            <div id="colunaEsquerda" class="divGeral">
-                    blablabla
-            </div>
-    
-            <div id="colunaCentro" class="divGeral">
-                blobloblob mané
-                <img src="cartaDoDemonio.jpg" alt="Carta do Demônio">
-            </div>
-    
-            <div id="colunaDireita" class="divGeral">
-                blablabla
-            </div>
-        </div>
-    
+<head>
+    <title>TP_5 - PB</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>  
+   <header>
         
+   </header>
+   
+   <nav id="navbar">
+        <div>
+            <ul>
+                <li><img id="logo" src="img/logo.png" alt=""></li>
+                <li><a name="aMenu" href="#">HOME</a></li>
+                <li><a class="aMenu" href="#">JOGAR</a></li>
+                <li><a class="aMenu" href="#">CARTAS</a></li>
+                <li><a class="aMenu" href="#">SOBRE</a></li>
+                <li><a class="aMenu" href="#">CONTATO</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <script src="JS/animacoes.js"></script>
-    </body>
+   <main>
+       <div class="areaPrincipal">
+            <p>Qualquer bosta</p>
+            <p>oibgriuaebrgiubaeriugbaiuerbg</p>
+            <img id="logo" src="img/praia.png" alt="">
+            <img id="logo" src="img/praia.png" alt="">
+       </div>
+   </main>
+
+   <footer>
+        
+   </footer>
+
+   <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("navbar").style.padding = "0px 10px";
+        document.getElementById("logo").style.height = "50px";
+        document.getElementById("logo").style.transition = "0.8s";
+      } else {
+        document.getElementById("navbar").style.padding = "5px 10px";
+        document.getElementById("logo").style.height = "100px";
+      }
+    }
+    </script>
+</body>
 </html>
