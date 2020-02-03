@@ -1,40 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang = "pt-br"> 
+
 <head>
-    <title>TP_5 - PB</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <title> Super Heroes Cards: Home</title>
+    <meta charset = "utf-8"/>
+    <meta name = "description" content = "Super Heroes Cards" />
+    <meta name="author" content="Leonardo Ewbank Vasconcellos e Marcos Targino "/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    
+
 </head>
-<body>  
-   <header>
+<body> 
+<main>
+    <div id="container"> 
+    
+    <header>
         
-   </header>
-   
-   <nav id="navbar">
-        <div>
-            <ul>
-                <li><img id="logo" src="img/logo.png" alt=""></li>
-                <li><a name="aMenu" href="#">HOME</a></li>
-                <li><a class="aMenu" href="#">JOGAR</a></li>
-                <li><a class="aMenu" href="#">CARTAS</a></li>
-                <li><a class="aMenu" href="#">SOBRE</a></li>
-                <li><a class="aMenu" href="#">CONTATO</a></li>
+    </header>
+
+    <nav class="Menu-Nav">
+            <ul> 
+                <li><a href="index.html"> <img src="logo.png"> </a></li>
+                <li><h1> Super Heroes Cards </h1></li>
+				<li> <a class="Menu-nav-link" href="index.html">Home</a></li>
+				<li><a class="Menu-nav-link" href="#">Sobre</a></li>
+                <li> <a class="Menu-nav-link" href="#">Fale Conosco</a></li>
+                <li> <a class="Menu-nav-link" href="#">Notícias</a></li>
+                <li><a class="Menu-nav-link" href="#"> Acesso</a> </li>
+                <li><input type="text" name="busca" placeholder="Busca" id="busca" class="busca"></li>
             </ul>
-        </div>
     </nav>
+    <hr>
+    <div id="conteudo" class="conteudo"> 
+    <h2> Super Heroes Cards</h2>
+    <section id="shc" class="shc">
+        <p> Marvel Comics is the brand name and primary imprint of Marvel Worldwide Inc., formerly Marvel Publishing, Inc. and Marvel Comics Group, a publisher of American comic books and related media. In 2009, The Walt Disney Company acquired Marvel Entertainment, Marvel Worldwide's parent company.
 
-   <main>
-       <div class="areaPrincipal">
-            <p>Qualquer bosta</p>
-            <p>oibgriuaebrgiubaeriugbaiuerbg</p>
-            <img id="logo" src="img/praia.png" alt="">
-            <img id="logo" src="img/praia.png" alt="">
-       </div>
-   </main>
+                Marvel was started in 1939 by Martin Goodman under a number of corporations and imprints but now known as Timely Comics,[2] and by 1951 had generally become known as Atlas Comics. The Marvel era began in 1961, the year that the company launched The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko and many others. The Marvel brand, which had been used over the years, was solidified as the company's primary brand.
+                
+                Marvel counts among its characters such well-known superheroes as Spider-Man, Iron Man, Thor, the Hulk, Captain America, Wolverine, Black Panther, Captain Marvel, Doctor Strange, Deadpool, Ghost Rider, Blade, Daredevil and the Punisher. Superhero teams exist such as the Avengers, the X-Men, the Fantastic Four and the Guardians of the Galaxy as well as supervillains including Doctor Doom, Magneto, Thanos, Ultron, Green Goblin, Doctor Octopus, Red Skull, Loki, Venom, Dormammu, Galactus, and Kingpin. Most of Marvel's fictional characters operate in a single reality known as the Marvel Universe, with most locations mirroring real-life places; many major characters are based in New York City.[3] Additionally, Marvel has published licensed properties including Star Wars comics twice from 1977 to 1986 and again since 2015.
+            <a href="https://en.wikipedia.org/wiki/Marvel_Comics"> Read More</a></p>
+    </section>
 
-   <footer>
-        
-   </footer>
+
+    </div>
+
+
+    <hr>
+   
+
+<footer>
+    <ul>
+    <li> <a href="https://www.facebook.com"><div class="fc"></div></a> </li>
+    <li> <a href="https://www.instagram.com"><div class="gp"></div></a></li>
+    <li> <a href="https://www.twitter.com"><div class="tt"></div></a></li>
+    <li><a class="Menu-nav-link-f" href="#">Fale Conosco</a></li>
+    <p id="rodape">&copy; Copyright Super Heroes Cards</p>
+   </ul>
+  
+
+</footer>
+
+</div>
+</main>
+</body> 
+
+
 
    <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
