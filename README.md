@@ -5,3 +5,8 @@ https://bootstrap-vue.js.org/docs/components/navbar/#navbar
 
 https://bootstrap-vue.js.org/docs/components/form
 https://bootstrap-vue.js.org/docs/reference/validation/
+
+
+
+
+https://alligator.io/css/font-face/
