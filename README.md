@@ -10,3 +10,8 @@ https://bootstrap-vue.js.org/docs/reference/validation/
 
 
 https://alligator.io/css/font-face/
+
+
+Pode pegar templates do HTML pras páginas -> CSS pronto
+
+https://pingendo.com/
