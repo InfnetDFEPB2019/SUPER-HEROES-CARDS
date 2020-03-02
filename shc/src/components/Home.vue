@@ -2,7 +2,7 @@
   <div class="Home">
     <div>
       <b-navbar toggleable="lg" type="dark" variant="info">
-        <b-navbar-brand href="#"><img src="../assets/logo.png" id="logo"> Super Hero Cards</b-navbar-brand>
+        <b-navbar-brand id="Logo-titulo" href="#"><img src="../assets/logo.png" id="logo"> Super Hero Cards</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -23,13 +23,6 @@
               <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
             </b-nav-form>
 
-            <b-nav-item-dropdown text="Lang" right>
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="#">FA</b-dropdown-item>
-            </b-nav-item-dropdown>
-
             <b-nav-item-dropdown right>
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
@@ -43,15 +36,6 @@
       </b-navbar>
     </div>
 
-
-
-
-
-
-
-
-
-
   </div>
 </template>
 
@@ -63,6 +47,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@font-face {
+  font-family:"Beckman-free";
+  src: url("../assets/Beckman-Free.otf");
+}
+@font-face {
+  font-family: "Conversation";
+  src: url("../assets/Conversation.otf");
+}
+@font-face {
+  font-family: "theboldfont";
+  src: url("../assets/theboldfont.ttf");
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -92,5 +88,13 @@ a {
 a{
   font-size: 22px;
 }
-
+#nav-collapse{
+  font-family: Beckman-free;
+  justify-content: space-around
+}
+#Logo-titulo{
+  font-family: Conversation;
+  font-size: 50px;
+  margin-right: 5%
+}
 </style>
