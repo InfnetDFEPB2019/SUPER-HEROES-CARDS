@@ -55,6 +55,7 @@ export default {
 }
 .navbar{
   position: sticky
+
 }
 ul.navbar-nav {
   display: flex;
