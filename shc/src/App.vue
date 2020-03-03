@@ -1,17 +1,20 @@
 <template>
   <div id="app">
    
-    <Home/>
+    <Cadastro/>
+    
+
+
   </div>
 </template>
 
 <script>
-import Home from './Home/Home.vue'
+import Cadastro from './Cadastro/Cadastro.vue'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Cadastro
   }
 }
 </script>
