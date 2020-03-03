@@ -23,7 +23,8 @@ https://www.dafont.com/pt/outrun-future.font
 
 Links de Fontes utilizáveis: BASIC SAN-SERIF
 https://www.dafont.com/pt/the-bold-font.font?text=Super+hero+cards&back=theme
-https://www.dafont.com/pt/beckman.font?text=sobre&back=theme ESCOLHIDA PARA BARRA DE NAVEGAÇÃO
+https://www.dafont.com/pt/beckman.font?text=sobre&back=theme 
+Fonte para textos padrões no site:
 https://www.dafont.com/pt/biko.font?text=Em+um+certo+Deus+veio+e+lhe+disse%3A+filho%2C+venha+c%E1&psize=s&back=theme
 
 
