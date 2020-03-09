@@ -56,8 +56,10 @@
 
     
 
-      <b-button type="submit" variant="primary" >Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <div id='botões'>
+        <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_login'>Cadastrar</b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_recuperar'>Resetar </b-button>
+      </div>
     </b-form>
     
   </div>
@@ -122,6 +124,27 @@ h1{
     max-width: 500px;
 
 }
+
+
+
+#b_login{
+  font-size: 20px;
+  width:200px;
+  background-color: green;
+}
+
+#b_recuperar{
+  font-size: 20px;
+  width:200px;
+}
+
+
+#botões{
+  max-width:500px;
+  margin:0 auto;
+}
+
+
 
 
 

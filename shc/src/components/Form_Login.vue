@@ -29,10 +29,12 @@
       </b-form-group>
 
     
-      <div id='botão'>
-      <b-button pill type="submit" variant="primary" aria-pressed="false">Login</b-button>
-      <b-button pill type="reset" variant="danger" aria-pressed="false">Recuperar senha </b-button>
+      <div id='botões'>
+        <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_login'>Login</b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_recuperar'>Recuperar senha </b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_cadastro'>Ainda não cadastrado? </b-button>
       </div>
+
     </b-form>
     
   </div>
@@ -95,6 +97,32 @@ h1{
     max-width: 500px;
 
 }
+
+#b_login{
+  font-size: 20px;
+  width:200px;
+  background-color: green;
+}
+
+#b_recuperar{
+  font-size: 20px;
+  width:200px;
+}
+
+#b_cadastro{
+  font-size: 20px;
+  width:300px;
+  background-color: orange;
+}
+
+
+
+#botões{
+  max-width:500px;
+  margin:0 auto;
+}
+
+
 
 
 
