@@ -2,20 +2,19 @@
    <b-container>
       
       <Header/>
-      <Form_Login/>
+    
 
     </b-container>
 </template>
 
 <script>
 import Header from './components/Header'
-import Form_Login from './components/Form_Login'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Form_Login,
+    
   }
 }
 </script>
