@@ -57,7 +57,7 @@ ul.navbar-nav {
 }
 
 a{
-  font-size: 10px;
+  font-size: 15px;
 }
 #nav-collapse{
   font-family: Beckman-free;
