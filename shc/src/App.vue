@@ -1,20 +1,20 @@
 <template>
   <div id="app">  
     <Header/>
-    <Login/>
+    <Form_Login/>
 
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
-import Login from './components/Login'
+import Form_Login from './components/Form_Login'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Login,
+    Form_Login,
   }
 }
 </script>

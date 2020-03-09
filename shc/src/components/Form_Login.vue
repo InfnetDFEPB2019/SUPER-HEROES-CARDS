@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'Form_Login',
   data() {
       return {
         form: {
