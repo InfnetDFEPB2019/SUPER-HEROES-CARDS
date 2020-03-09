@@ -1,10 +1,10 @@
 <template>
-  <div id="app">  
-    <Header/>
-    
-    <Form_Login/>
+   <b-container>
+      
+      <Header/>
+      <Form_Login/>
 
-  </div>
+    </b-container>
 </template>
 
 <script>
