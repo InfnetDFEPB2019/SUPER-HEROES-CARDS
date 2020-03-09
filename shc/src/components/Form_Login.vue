@@ -29,9 +29,12 @@
       </b-form-group>
 
     
+      <div id='botões'>
+        <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_login'>Login</b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_recuperar'>Recuperar senha </b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_cadastro'>Ainda não cadastrado? </b-button>
+      </div>
 
-      <b-button type="submit" variant="primary">Login</b-button>
-      <b-button type="reset" variant="danger">Recuperar senha </b-button>
     </b-form>
     
   </div>
@@ -44,7 +47,7 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'Form_Login',
   data() {
       return {
         form: {
@@ -94,5 +97,33 @@ h1{
     max-width: 500px;
 
 }
+
+#b_login{
+  font-size: 20px;
+  width:200px;
+  background-color: green;
+}
+
+#b_recuperar{
+  font-size: 20px;
+  width:200px;
+}
+
+#b_cadastro{
+  font-size: 20px;
+  width:300px;
+  background-color: orange;
+}
+
+
+
+#botões{
+  max-width:500px;
+  margin:0 auto;
+}
+
+
+
+
 
 </style>
