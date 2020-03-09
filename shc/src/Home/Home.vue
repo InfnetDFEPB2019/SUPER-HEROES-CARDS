@@ -33,7 +33,10 @@ export default {
 @font-face {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
+  
 }
+
+
 
 
 </style>

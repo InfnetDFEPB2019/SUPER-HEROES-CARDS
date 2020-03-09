@@ -1,10 +1,9 @@
 <template>
-   <b-container>
+   <div id="app">
       
       <Header/>
-    
 
-    </b-container>
+    </div>
 </template>
 
 <script>
@@ -14,7 +13,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    
   }
 }
 </script>
@@ -22,7 +20,6 @@ export default {
 <style>
 #app {
   height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -36,6 +33,5 @@ export default {
 	opacity: 1;
 	color: #010102;
   
-
 }
 </style>
