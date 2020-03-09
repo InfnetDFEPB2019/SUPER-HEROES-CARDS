@@ -29,9 +29,10 @@
       </b-form-group>
 
     
-
-      <b-button type="submit" variant="primary">Login</b-button>
-      <b-button type="reset" variant="danger">Recuperar senha </b-button>
+      <div id='botão'>
+      <b-button pill type="submit" variant="primary" aria-pressed="false">Login</b-button>
+      <b-button pill type="reset" variant="danger" aria-pressed="false">Recuperar senha </b-button>
+      </div>
     </b-form>
     
   </div>
@@ -94,5 +95,7 @@ h1{
     max-width: 500px;
 
 }
+
+
 
 </style>

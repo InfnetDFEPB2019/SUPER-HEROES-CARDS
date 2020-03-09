@@ -123,10 +123,6 @@ h1{
 
 }
 
-#b-button {
-  padding: 20px;
 
-
-}
 
 </style>
