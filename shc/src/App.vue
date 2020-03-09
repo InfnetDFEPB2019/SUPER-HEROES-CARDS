@@ -1,10 +1,8 @@
 <template>
-   <b-container>
-      
+     
       <Header/>
       <Form_Login/>
 
-    </b-container>
 </template>
 
 <script>
