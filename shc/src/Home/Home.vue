@@ -1,7 +1,7 @@
 <template>
    <div>
       <Header/>
-      
+        
       <Footer/>
     </div>
 
@@ -11,12 +11,14 @@
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Login from '../components/Login'
 
 export default {
   name: 'Home',
   components: {
     Header,
-    Footer
+    Footer,
+    Login
   }
 }
 

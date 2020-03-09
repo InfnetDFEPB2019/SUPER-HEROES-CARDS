@@ -1,20 +1,23 @@
 <template>
-  <div id="app">
-   
-    <Cadastro/>
-    
-
+  <div id="app">  
+    <Header/>
+    <Login/>
+    <Footer/>
 
   </div>
 </template>
 
 <script>
-import Cadastro from './Cadastro/Cadastro.vue'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Login from './components/Login'
 
 export default {
   name: 'App',
   components: {
-    Cadastro
+    Header,
+    Login,
+    Footer
   }
 }
 </script>

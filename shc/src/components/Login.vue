@@ -2,16 +2,8 @@
 
     <div>
         <br>
-    <h1> Cadastro </h1>
+    <h1> Login </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
-     <b-form-group id="input-group-1" label="Nome:" label-for="input-1">
-        <b-form-input
-          id="input-1"
-          v-model="form.name"
-          required
-          placeholder="Digite seu nome"
-        ></b-form-input>
-      </b-form-group>
 
       <b-form-group id="input-group-2" label="Nome de usuário:" label-for="input-2">
         <b-form-input
@@ -22,42 +14,24 @@
         ></b-form-input>
       </b-form-group>
 
-
-     
-      <b-form-group
-        id="input-group-3"
-        label="Email:"
-        label-for="input-3"
-        
-      >
-        <b-form-input
-          id="input-3"
-          v-model="form.email"
-          type="email"
-          required
-          placeholder="Digite seu email"
-        ></b-form-input>
-      </b-form-group>
-
        <b-form @submit.stop.prevent id="input-4" >
         <label for="text-password">Senha</label>
-        <b-input type="password" id="text-password" aria-describedby="password-help-block" v-model="form.senha" required minlength="8" maxlength="20" placeholder="Digite uma senha"></b-input>
-        <b-form-text id="password-help-block">
-        Sua senha deve ter de 8-20 caracteres, sem espaços. 
+        <b-input type="password" id="text-password" aria-describedby="password-help-block" v-model="form.senha" required minlength="8" maxlength="20" placeholder="Digite a sua senha"></b-input>
+        <b-form-text id="password-help-block"> 
         </b-form-text>
         </b-form>
      
 
       <b-form-group id="input-group-5">
         <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
-          <b-form-checkbox value="me">Concordo com os termos</b-form-checkbox>
+          <b-form-checkbox value="me">Lembrar usuário e senha</b-form-checkbox>
         </b-form-checkbox-group>
       </b-form-group>
 
     
 
-      <b-button type="submit" variant="primary" >Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button type="submit" variant="primary">Login</b-button>
+      <b-button type="reset" variant="danger">Recuperar senha </b-button>
     </b-form>
     
   </div>
@@ -70,13 +44,12 @@
 
 <script>
 export default {
-  name: 'FormCadastro',
+  name: 'Login',
   data() {
       return {
         form: {
-          email: '',
-          name: '',
           user:'',
+          senha:'',
           checked: []
         },
         
@@ -91,9 +64,8 @@ export default {
       onReset(evt) {
         evt.preventDefault()
         // Reset our form values
-        this.form.email = ''
-        this.form.name = ''
         this.form.user = ''
+        this.form.senha = ''
         this.form.checked = []
         // Trick to reset/clear native browser form validation state
         this.show = false
@@ -120,12 +92,6 @@ h1{
     margin:0 auto;
     margin-top: 2%;
     max-width: 500px;
-
-}
-
-#b-button {
-  padding: 20px;
-
 
 }
 

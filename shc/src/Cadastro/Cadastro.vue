@@ -4,6 +4,8 @@
 
       <FormCadastro/>
 
+      <Footer/>
+
     </div>
     
         
@@ -16,12 +18,14 @@
 
 import Header from '../components/Header'
 import FormCadastro from '../components/Formulario_Cadastro'
+import Footer from '../components/Footer'
 
 export default {
   name: 'Cadastro',
   components: {
     Header,
-    FormCadastro
+    FormCadastro,
+    Footer
   }
 }
 
