@@ -29,8 +29,10 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
+
+
 </script>
 
 <style scoped>
@@ -56,10 +58,8 @@ export default {
   align-items:left;
 }
 .navbar{
-  position: sticky;
   background: rgb(20,29,152);
   background: linear-gradient(90deg, rgba(20,29,152,0.9360119047619048) 0%, rgba(30,87,176,0.8995973389355743) 28%, rgba(2,127,186,0.938813025210084) 100%);
-  position: sticky
 }
 ul.navbar-nav {
   display: flex;
@@ -80,6 +80,10 @@ a{
   font-family: Conversation;
   font-size: 60px;
   padding: 10px
+}
+.Header{  
+  position: sticky;
+  top: 0;
 }
 
 </style>
