@@ -9,6 +9,7 @@ Vue.use(VueRouter);
 import Cadastro from './Cadastro/Cadastro.vue'
 import Home from './Home/Home.vue'
 import Login from './Login/Login.vue'
+
 import Cartas from './Cartas/Cartas.vue'
 import Jogar from './Jogar/Jogar.vue'
 import Sobre from './Sobre/Sobre.vue'
