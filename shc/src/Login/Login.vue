@@ -17,7 +17,7 @@ import Form_Login from '../Login/Login.vue'
 
 
 export default {
-  name: 'Jogar',
+  name: 'Login',
   components: {
     Header,
     Form_Login
