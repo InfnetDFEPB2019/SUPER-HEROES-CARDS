@@ -2,7 +2,27 @@
    <div>
       <Header/>
 
-      <h1> Um texto bacanudo bem topzera </h1>
+      <h1> Super Heroes Cards </h1>
+
+      <section id='texto'>
+          
+            <h2> Um jogo divertido de super heróis </h2>
+          <p>
+              Esse jogo foi construído com o intuito de integrar todos os conhecimentos obtidos ao longo do bloco de Front-End.
+              Durante esse bloco aprendemos a utilizar o JavaScript, HTML, CSS e frameworks que auxiliam na programação de sites funcionais
+              e responsívos. 
+              O caminho para a construção do site foi complexo, cheio de pedras e diversos obstáculos, muitas vezes o conhecimento obtido em sala
+              não foi o suficiente e o grupo teve que buscar informações além do já ensinado. 
+          </p>
+          <br>
+          <br>
+          <p>
+              A equipe de desenvolvimento desse projeto foi composta por 4 pessoas: Leonardo Ewbank, Nathan Borges, Marcos Aurelios, Matheus Matos. 
+              Esse projeto foi o primeiro da equipe na faculdade. 
+         </p>
+          
+
+      </section>
 
     </div>
     
@@ -41,6 +61,10 @@ export default {
 @font-face {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
+}
+h1 {
+  font-size:40px;
+  margin-top:10px;
 }
 
 
