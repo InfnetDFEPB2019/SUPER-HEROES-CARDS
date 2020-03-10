@@ -32,7 +32,7 @@
       <div id='botões'>
         <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_login'>Login</b-button>
         <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_recuperar'>Recuperar senha </b-button>
-        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_cadastro'>Ainda não cadastrado? </b-button>
+        <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_cadastro' href="/cadastro">Ainda não cadastrado? </b-button>
       </div>
 
     </b-form>

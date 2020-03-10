@@ -8,9 +8,10 @@
           
             <h2> Um projeto agregador de conhecimentos, experiências e desafios </h2>
           <p>
-              Esse jogo foi construído com o intuito de integrar todos os conhecimentos obtidos ao longo do bloco de Front-End.
-              Durante esse bloco aprendemos a utilizar o JavaScript, HTML, CSS e frameworks que auxiliam na programação de sites funcionais
-              e responsívos. 
+              Esse jogo foi construído com o intuito de integrar todos os conhecimentos obtidos ao longo do bloco de Front-End, para a 
+              disciplina Projeto de Bloco - Desenvolvimento Front-End. 
+              Durante esse bloco aprendemos a utilizar o JavaScript, HTML, CSS e frameworks que auxiliam na programação e construção de sites reativos e 
+              responsíveis. 
               O caminho para a construção do site foi complexo, cheio de pedras e diversos obstáculos, muitas vezes o conhecimento obtido em sala
               não foi o suficiente e o grupo teve que buscar informações além do já ensinado. 
           </p>
@@ -18,7 +19,7 @@
           <br>
           <p>
               A equipe de desenvolvimento desse projeto foi composta por 4 pessoas: Leonardo Ewbank, Nathan Borges, Marcos Aurelios, Matheus Matos. 
-              Esse projeto foi o primeiro da equipe na faculdade. 
+              Es
          </p>
           
 
