@@ -7,18 +7,18 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item href="/cartas">Home</b-nav-item>
+            <b-nav-item href="/">Home</b-nav-item>
             <b-nav-item href="/jogar">Jogar</b-nav-item>
             <b-nav-item-dropdown center>
               <template v-slot:button-content>
                 <em>User</em>
               </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
+              <b-dropdown-item href="#">Login</b-dropdown-item>
               <b-dropdown-item href="#">Sign Out</b-dropdown-item>
             </b-nav-item-dropdown>
-            <b-nav-item href="#">Cartas</b-nav-item>
-            <b-nav-item href="#">Sobre</b-nav-item>
-            <b-nav-item href="#">Contatos</b-nav-item>
+            <b-nav-item href="/cartas">Cartas</b-nav-item>
+            <b-nav-item href="/sobre">Sobre</b-nav-item>
+            <b-nav-item href="/contatos">Contatos</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
