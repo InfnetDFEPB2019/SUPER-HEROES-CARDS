@@ -13,7 +13,7 @@
               <template v-slot:button-content>
                 <em>User</em>
               </template>
-              <b-dropdown-item href="#">Login</b-dropdown-item>
+              <b-dropdown-item href="/login">Login</b-dropdown-item>
               <b-dropdown-item href="#">Sign Out</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item href="/cartas">Cartas</b-nav-item>
