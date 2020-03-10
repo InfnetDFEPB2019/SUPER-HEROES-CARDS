@@ -4,12 +4,10 @@
 
       <Form_Login/>
 
-    </div>
-    
-        
+
     
 
-
+   </div>
 </template>
 
 <script>
