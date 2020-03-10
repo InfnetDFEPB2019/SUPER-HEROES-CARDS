@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 
 
+
 import Cadastro from './Cadastro/Cadastro.vue'
 import Home from './Home/Home.vue'
 import Login from './Login/Login.vue'
