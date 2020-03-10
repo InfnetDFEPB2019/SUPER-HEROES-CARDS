@@ -1,8 +1,9 @@
 <template>
-   <div id="Header_Nav">
+   <div>
       <Header/>
-
       <Form_Login/>
+
+
 
     </div>
     
@@ -14,14 +15,15 @@
 
 <script>
 
-import Header from '../components/Header'
-import Form_Login from '../components/Form_Login'
+import Header from '../components/Header.vue'
+import Form_Login from '../Login/Login.vue'
+
 
 export default {
-  name: 'Login',
+  name: 'Jogar',
   components: {
     Header,
-    Form_Login,
+    Form_Login
   }
 }
 
