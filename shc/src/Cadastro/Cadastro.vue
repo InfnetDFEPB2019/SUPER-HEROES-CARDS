@@ -1,5 +1,5 @@
 <template>
-   <div id="Header_Nav">
+   <div>
       <Header/>
 
       <FormCadastro/>

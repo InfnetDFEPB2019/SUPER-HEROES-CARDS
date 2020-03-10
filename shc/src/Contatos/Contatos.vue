@@ -1,8 +1,8 @@
 <template>
-   <div>
+   <div >
       <Header/>
 
-    
+      
 
     </div>
     
@@ -18,7 +18,7 @@ import Header from '../components/Header'
 
 
 export default {
-  name: 'Jogar',
+  name: 'Contatos',
   components: {
     Header,
     
