@@ -1,14 +1,14 @@
 <template>
-  <div >
+  <div>
     <Header/>
-    <div>
+  <section class="Area_cartas">
       <b-card
         title="Homem Aranha"
         img-src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"
         img-alt="Spoder"
         img-top
         tag="article"
-        style="max-width: 15rem;"
+        style="max-width: 13rem;"
         class="mb-2"
       >
         <b-card-text>
@@ -23,7 +23,7 @@
         img-alt="Spoder"
         img-top
         tag="article"
-        style="max-width: 15rem;"
+        style="max-width: 13rem;"
         class="mb-2"
       >
         <b-card-text>
@@ -32,8 +32,9 @@
 
         <b-button href="#" variant="primary">Comparar</b-button>
       </b-card>
-    </div>
+    </section>
   </div>
+  
   
     
 </template>
@@ -67,6 +68,10 @@ export default {
 @font-face {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
+}
+.Area_cartas{
+  display: flex;
+  padding: 10px;
 }
 
 
