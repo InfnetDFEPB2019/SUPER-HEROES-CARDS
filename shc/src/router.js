@@ -11,6 +11,9 @@ import Home from './Home/Home.vue'
 import Login from './Login/Login.vue'
 import Cartas from './Cartas/Cartas.vue'
 import Jogar from './Jogar/Jogar.vue'
+import Sobre from './Sobre/Sobre.vue'
+import Contatos from './Contatos/Contatos.vue'
+
 
 
 export default new VueRouter ({
@@ -20,6 +23,16 @@ export default new VueRouter ({
             path: '/cadastro',
             name:'cadastro',
             component:Cadastro
+        },
+        {
+            path: '/Sobre',
+            name:'sobre',
+            component:Sobre
+        },
+        {
+            path: '/Contatos',
+            name:'contatos',
+            component:Contatos
         },
         {
             path: '/',
