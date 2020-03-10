@@ -9,6 +9,7 @@
 
 import Header from '../components/Header'
 
+
 export default {
   name: 'Home',
   components: {

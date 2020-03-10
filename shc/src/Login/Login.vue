@@ -1,7 +1,9 @@
 <template>
    <div>
       <Header/>
+
       <Form_Login/>
+
     </div>
     
         
@@ -13,7 +15,8 @@
 <script>
 
 import Header from '../components/Header.vue'
-import Form_Login from '../Login/Login.vue'
+import Form_Login from '../components/Form_Login'
+
 
 
 export default {
