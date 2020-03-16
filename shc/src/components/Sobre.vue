@@ -1,8 +1,8 @@
 <template>
    <div>
-      <Header/>
+     
 
-      <h1> Super Heroes Cards </h1>
+      <h1> Sobre </h1>
 
       <section id='texto'>
           
@@ -15,11 +15,9 @@
               O caminho para a construção do site foi complexo, cheio de pedras e diversos obstáculos, muitas vezes o conhecimento obtido em sala
               não foi o suficiente e o grupo teve que buscar informações além do já ensinado. 
           </p>
-     
           <br>
           <p>
-              A equipe de desenvolvimento desse projeto foi composta por 4 pessoas: Leonardo Ewbank, Nathan Borges, Marcos Aurelios, Matheus Matos. 
-              Es
+              A equipe de desenvolvimento desse projeto foi composta por 4 pessoas: Leonardo Ewbank, Nathan Borges, Marcos Aurelios, Matheus Matos.  
          </p>
           
 
@@ -35,13 +33,13 @@
 
 <script>
 
-import Header from '../components/Header'
+
 
 
 export default {
   name: 'Sobre',
   components: {
-    Header,
+
     
   }
 }
@@ -66,14 +64,17 @@ export default {
 h1 {
   font-size:50px;
   margin-top:10px;
-  color:green;
+  color:black;
+  font-family: "theboldfont";
 }
 
 #texto{
   margin:0 auto;
   display:block;
   width: 1000px;
-  background-color:pink;
+}
+.p{
+  margin-bottom:10px;
 }
 
 

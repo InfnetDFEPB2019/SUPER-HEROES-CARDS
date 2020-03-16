@@ -17,8 +17,7 @@
               <b-dropdown-item href="/cadastro">Cadastro</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item href="/cartas">Cartas</b-nav-item>
-            <b-nav-item href="/sobre">Sobre</b-nav-item>
-            <b-nav-item href="/contatos">Contatos</b-nav-item>
+        
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>

@@ -1,6 +1,6 @@
 <template>
    <div >
-      <Header/>
+      
 
       
 
@@ -10,13 +10,12 @@
 
 <script>
 
-import Header from '../components/Header'
+
 
 
 export default {
   name: 'Contatos',
   components: {
-    Header,
     
   }
 }

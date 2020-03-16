@@ -1,6 +1,14 @@
 <template>
    <div>
       <Header/>
+      
+      
+      <section id='sobre'>
+      <Sobre/>
+      </section>
+      <section id='sobre'>
+      <Contatos/>
+      </section>
     </div>
 
 </template>
@@ -8,12 +16,16 @@
 <script>
 
 import Header from '../components/Header'
+import Sobre from '../components/Sobre'
+import Contatos from '../components/Contatos'
 
 
 export default {
   name: 'Home',
   components: {
     Header,
+    Sobre,
+    Contatos
     
   }
 }
@@ -35,6 +47,11 @@ export default {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
   
+}
+#sobre{
+  background-color:rgba(0,0,255,0.3);
+  
+ 
 }
 
 
