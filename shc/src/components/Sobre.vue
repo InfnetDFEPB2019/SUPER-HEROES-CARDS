@@ -1,12 +1,10 @@
 <template>
-   <div>
-     
-
+   <div class="areasobre">
       <h1> Sobre </h1>
 
       <section id='texto'>
           
-            <h2> Um projeto agregador de conhecimentos, experiências e desafios </h2>
+          <h2> Um projeto agregador de conhecimentos, experiências e desafios </h2>
           <p>
               Esse jogo foi construído com o intuito de integrar todos os conhecimentos obtidos ao longo do bloco de Front-End, para a 
               disciplina Projeto de Bloco - Desenvolvimento Front-End. 
@@ -75,6 +73,10 @@ h1 {
 }
 .p{
   margin-bottom:10px;
+}
+.areasobre{
+  background-color:rgba(133, 12, 12);
+  border-radius: 10px;
 }
 
 

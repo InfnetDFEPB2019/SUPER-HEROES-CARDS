@@ -1,7 +1,9 @@
 <template>
    <div>
       <Header/>
-      
+      <section id='JogarHome'>
+      <JogarHome/>
+      </section>
       
       <section id='sobre'>
       <Sobre/>
@@ -18,6 +20,7 @@
 import Header from '../components/Header'
 import Sobre from '../components/Sobre'
 import Contatos from '../components/Contatos'
+import JogarHome from '../components/JogarHome'
 
 
 export default {
@@ -25,7 +28,8 @@ export default {
   components: {
     Header,
     Sobre,
-    Contatos
+    Contatos,
+    JogarHome
     
   }
 }
@@ -48,11 +52,7 @@ export default {
   src: url("../assets/theboldfont.ttf");
   
 }
-#sobre{
-  background-color:rgba(0,0,255,0.3);
-  
- 
-}
+
 
 
 
