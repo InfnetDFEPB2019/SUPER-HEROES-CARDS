@@ -4,7 +4,7 @@
         <br>
     
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
-      <h1> Login </h1>
+      <h1 class="text-center"> Login </h1>
       <b-form-group id="input-group-2" label="Nome de usuário:" label-for="input-2">
         <b-form-input
           id="input-2"
