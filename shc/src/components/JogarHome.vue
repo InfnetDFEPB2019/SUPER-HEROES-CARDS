@@ -72,6 +72,7 @@ h1 {
 	background-position-y: 0;
 	opacity: 1;
 	color: #010102;
+  background-attachment: fixed;
   
 }
 
