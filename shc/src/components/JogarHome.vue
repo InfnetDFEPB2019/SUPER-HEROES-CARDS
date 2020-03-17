@@ -1,7 +1,11 @@
 <template>
    <div class="areajogar">
-      <h1> Jogar Agora </h1>
-
+      <h1>Escolha o seu Heroi</h1>
+      <p>Super heroes cards é um jogo de 54 cartas para voce batlhar com seus amiguinhos e blablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+      <b-button variant="danger">Jogue Agora</b-button>
     </div>
     
         
@@ -59,7 +63,7 @@ h1 {
   background-color:rgba(133, 12, 12);
 }
 .areajogar{
-  height: 100vh;
+  height: 75vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
