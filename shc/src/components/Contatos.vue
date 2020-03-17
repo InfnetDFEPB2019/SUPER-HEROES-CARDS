@@ -31,10 +31,12 @@
      
        <b-form-textarea
       id="textarea"
+      
       v-model="form.text"
       placeholder="Digite o seu comentário"
       rows="3"
       max-rows="6"
+      label="Digite aqui seu comentário"
     ></b-form-textarea>
 
       <div id='botões'>
