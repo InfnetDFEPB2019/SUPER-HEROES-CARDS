@@ -2,9 +2,9 @@
 
     <div>
         <br>
-    <h1> Fale Conosco </h1>
+    <h1 style="color: white" > Fale Conosco </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
-     <b-form-group id="input-group-1" label="Nome:" label-for="input-1">
+     <b-form-group style="color: white" id="input-group-1" label="Nome:" label-for="input-1">
         <b-form-input
           id="input-1"
           v-model="form.name"
@@ -13,7 +13,7 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group
+      <b-form-group style="color: white"
         id="input-group-3"
         label="Email:"
         label-for="input-3"
