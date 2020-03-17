@@ -57,8 +57,9 @@ export default {
   align-items:left;
 }
 .navbar{
-  background: rgb(20,29,152);
-  background: linear-gradient(90deg, rgba(20,29,152,0.9360119047619048) 0%, rgba(30,87,176,0.8995973389355743) 28%, rgba(2,127,186,0.938813025210084) 100%);
+  background-color: #2f4f4f!important;
+  /* background: rgb(20,29,152);
+  background: linear-gradient(90deg, rgba(20,29,152,0.9360119047619048) 0%, rgba(30,87,176,0.8995973389355743) 28%, rgba(2,127,186,0.938813025210084) 100%); */
 }
 ul.navbar-nav {
   display: flex;
