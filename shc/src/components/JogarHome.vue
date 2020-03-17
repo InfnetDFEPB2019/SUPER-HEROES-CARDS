@@ -57,7 +57,6 @@ h1 {
 }
 .areasobre{
   background-color:rgba(133, 12, 12);
-  border-radius: 10px;
 }
 .areajogar{
   height: 100vh;
