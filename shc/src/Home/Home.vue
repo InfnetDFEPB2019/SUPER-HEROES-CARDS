@@ -8,7 +8,7 @@
       <section id='sobre'>
       <Sobre/>
       </section>
-      <section id='sobre'>
+      <section id='contatos'>
       <Contatos/>
       </section>
     </div>
@@ -50,6 +50,14 @@ export default {
 @font-face {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
+  
+}
+#sobre{
+  background-color:rgba(0,0,255,0.3);
+  
+}
+#contatos{
+  background-color:rgba(0,0,255,0.3);
   
 }
 
