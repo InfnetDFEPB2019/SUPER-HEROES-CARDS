@@ -51,7 +51,7 @@ export default {
   background-color: black;
 }
 #logo{
-  width:100px;
+  width:75px;
   margin-left: 0;
   border-radius: 99%;
   align-items:left;
@@ -65,11 +65,11 @@ ul.navbar-nav {
   justify-content: space-around;
   width: 80%;
   align-items:center; 
-  font-size: 25px
+  font-size: 21px
 }
 
 a{
-  font-size: 25px;
+  font-size: 21px;
 }
 #nav-collapse{
   font-family: Beckman-free;
@@ -77,7 +77,7 @@ a{
 }
 #Logo-titulo{
   font-family: Conversation;
-  font-size: 60px;
+  font-size: 45px;
   padding: 10px
 }
 .Header{  
