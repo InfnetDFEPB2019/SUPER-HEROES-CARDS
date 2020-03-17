@@ -1,10 +1,9 @@
 <template>
    <div class="areajogar">
       <h1>Escolha o seu Heroi</h1>
-      <p>Super heroes cards é um jogo de 54 cartas para voce batlhar com seus amiguinhos e blablablablablablablablabla
-        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
-        blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+      <p>Super heroes cards é um jogo de 52 onde você irá batalhar contra seus amigos ou o computador e se divertir muito.
+        Venha escolher seu heroi e mostrar quem é o melhor. 
+      </p>
       <b-button variant="danger">Jogue Agora</b-button>
     </div>
     
