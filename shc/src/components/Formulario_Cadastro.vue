@@ -2,7 +2,7 @@
 
     <div>
         <br>
-    <h1> Cadastro </h1>
+    <h1 class="text-center"> Cadastro </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
      <b-form-group id="input-group-1" label="Nome:" label-for="input-1">
         <b-form-input
