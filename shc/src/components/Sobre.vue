@@ -75,7 +75,7 @@ h1 {
   margin-bottom:10px;
 }
 .areasobre{
-  background-color:rgba(133, 12, 12);
+  background-color:#2f4f4f;
 
 }
 
