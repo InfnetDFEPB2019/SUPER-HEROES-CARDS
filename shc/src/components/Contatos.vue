@@ -28,13 +28,15 @@
         ></b-form-input>
       </b-form-group>
 
-     
+      <label>Digite o Comentário</label>
        <b-form-textarea
       id="textarea"
       v-model="form.text"
       placeholder="Digite o seu comentário"
       rows="3"
       max-rows="6"
+
+      required
     ></b-form-textarea>
 
       <div id='botões'>
