@@ -4,7 +4,7 @@
       <p>Super heroes cards é um jogo de 52 onde você irá batalhar contra seus amigos ou o computador e se divertir muito.
         Venha escolher seu heroi e mostrar quem é o melhor. 
       </p>
-      <b-button variant="danger">Jogue Agora</b-button>
+      <b-button variant="danger" href="/jogar">Jogue Agora</b-button>
     </div>
     
         
