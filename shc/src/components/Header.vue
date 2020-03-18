@@ -1,7 +1,7 @@
 <template>
-  <div class="Header">
+  <div>
     <div>
-      <b-navbar toggleable="lg" type="dark" variant="info">
+      <b-navbar id="navbar" toggleable="lg" type="dark" variant="info">
         <b-navbar-brand id="Logo-titulo" href="/"><img src="../assets/logo.png" id="logo"> Super Hero Cards</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -30,6 +30,19 @@
 export default {
   name: 'Header',
 }
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("Logo-titulo").style.fontSize = "26px";
+    document.getElementById("logo").style.width = "30px";
+  } else {
+    document.getElementById("navbar").style.padding = "15px 10px";
+    document.getElementById("Logo-titulo").style.fontSize = "45px";
+    document.getElementById("logo").style.width = "45px";
+  }
+}
 
 
 </script>
@@ -51,15 +64,23 @@ export default {
   background-color: black;
 }
 #logo{
-  width:75px;
+  width:45px;
   margin-left: 0;
   border-radius: 99%;
   align-items:left;
+  transition: 0.5s;
 }
 .navbar{
   background-color: #2f4f4f!important;
-  /* background: rgb(20,29,152);
-  background: linear-gradient(90deg, rgba(20,29,152,0.9360119047619048) 0%, rgba(30,87,176,0.8995973389355743) 28%, rgba(2,127,186,0.938813025210084) 100%); */
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.5s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  height: auto;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 ul.navbar-nav {
   display: flex;
@@ -70,7 +91,11 @@ ul.navbar-nav {
 }
 
 a{
-  font-size: 21px;
+  float: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
 }
 #nav-collapse{
   font-family: Beckman-free;
@@ -79,11 +104,8 @@ a{
 #Logo-titulo{
   font-family: Conversation;
   font-size: 45px;
-  padding: 10px
-}
-.Header{  
-  position: sticky;
-  top: 0;
+  padding: 10px;
+  transition: 0.5s;
 }
 
 </style>
