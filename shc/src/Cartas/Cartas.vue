@@ -23,9 +23,7 @@
       </b-card>  
       
     </div>
-    
-    
-    
+      
     </section>
   </div>
      
@@ -71,8 +69,10 @@ export default {
 }
 .Area_cartas{
   display: flex;
+  flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
+  
 }
 .Cartas{
   display: flex;
