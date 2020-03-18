@@ -6,18 +6,9 @@
       </p>
       <b-button variant="danger" href="/jogar">Jogue Agora</b-button>
     </div>
-    
-        
-    
-
-
 </template>
 
 <script>
-
-
-
-
 export default {
   name: 'JogarHome',
   components: {
@@ -25,10 +16,7 @@ export default {
     
   }
 }
-
-
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @font-face {
@@ -62,6 +50,7 @@ h1 {
   background-color:rgba(133, 12, 12);
 }
 .areajogar{
+  margin-top: 117px;
   height: 75vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -52,17 +52,9 @@ export default {
   src: url("../assets/theboldfont.ttf");
   
 }
-#sobre{
-  background-color:rgba(0,0,255,0.3);
-  
-}
+
 #contatos{
   background-color:rgba(0,0,255,0.3);
   
 }
-
-
-
-
-
 </style>

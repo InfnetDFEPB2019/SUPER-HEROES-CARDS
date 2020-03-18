@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="header">
       <b-navbar id="navbar" toggleable="lg" type="dark" variant="info">
         <b-navbar-brand id="Logo-titulo" href="/"><img src="../assets/logo.png" id="logo"> Super Hero Cards</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -60,8 +60,8 @@ function scrollFunction() {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
 }
-.Header{
-  background-color: black;
+.header{
+  display: flex;
 }
 #logo{
   width:45px;
@@ -73,7 +73,6 @@ function scrollFunction() {
 .navbar{
   background-color: #2f4f4f!important;
   overflow: hidden;
-  background-color: #f1f1f1;
   padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.5s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */

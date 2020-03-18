@@ -26,9 +26,7 @@
     
     </section>
   </div>
-  
-  
-    
+     
 </template>
 
 <script>
@@ -72,6 +70,7 @@ export default {
 .Area_cartas{
   display: flex;
   padding: 10px;
+  margin-top: 117px;
 }
 .Cartas{
   display: flex;
