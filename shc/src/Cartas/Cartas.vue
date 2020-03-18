@@ -17,9 +17,11 @@
         <b-card-text>
           {{card.powerstats}}
         </b-card-text>
-        
+
         <b-button href="#" variant="primary">Comparar</b-button>
+        
       </b-card>  
+      
     </div>
     
     
