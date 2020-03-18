@@ -15,7 +15,7 @@
         class="md-2"
       >
         <b-card-text>
-          {{card.powerstats}}
+          {{ card.powerstats | formatarCardInf()}}
         </b-card-text>
 
         <b-button href="#" variant="primary">Comparar</b-button>
