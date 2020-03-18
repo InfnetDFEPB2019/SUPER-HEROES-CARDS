@@ -2,74 +2,28 @@
   <div>
     <Header/>
   <section class="Area_cartas">
-    <div class="Cartas">
+    
+    <div v-for ="card in allCards" :key="card.id" class="Cartas">
+     
       <b-card
-        title="Homem Aranha"
-        img-src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"
-        img-alt="Spoder"
+        :title="card.name"
+        :img-src="card.image.url"
+        :img-alt="card.name"
         img-top
         tag="article"
         style="max-width: 13rem;"
-        class="mb-2"
+        class="md-2"
       >
         <b-card-text>
-          Descrição do heroi
+          {{card.powerstats}}
         </b-card-text>
-
+        
         <b-button href="#" variant="primary">Comparar</b-button>
-      </b-card>
+      </b-card>  
     </div>
-    <div class="Cartas">
-      <b-card
-        title="Homem Aranha"
-        img-src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"
-        img-alt="Spoder"
-        img-top
-        tag="article"
-        style="max-width: 13rem;"
-        class="mb-2"
-      >
-        <b-card-text>
-          Descrição do heroi
-        </b-card-text>
-
-        <b-button href="#" variant="primary">Comparar</b-button>
-      </b-card>
-      </div>
-          <div class="Cartas">
-      <b-card
-        title="Homem Aranha"
-        img-src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"
-        img-alt="Spoder"
-        img-top
-        tag="article"
-        style="max-width: 13rem;"
-        class="mb-2"
-      >
-        <b-card-text>
-          Descrição do heroi
-        </b-card-text>
-
-        <b-button href="#" variant="primary">Comparar</b-button>
-      </b-card>
-    </div>
-    <div class="Cartas">
-      <b-card
-        title="Homem Aranha"
-        img-src="https://upload.wikimedia.org/wikipedia/pt/7/78/Spider-Man_jogo_2018_capa.png"
-        img-alt="Spoder"
-        img-top
-        tag="article"
-        style="max-width: 13rem;"
-        class="mb-2"
-      >
-        <b-card-text>
-          Descrição do heroi
-        </b-card-text>
-
-        <b-button href="#" variant="primary">Comparar</b-button>
-      </b-card>
-      </div>
+    
+    
+    
     </section>
   </div>
   
@@ -80,15 +34,23 @@
 <script>
 
 import Header from '../components/Header'
-
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: 'Cartas',
+   methods: {
+    ...mapActions(["fetchCards"]),
+
+  },
+  computed: mapGetters(["allCards"]),
+  created() {
+    this.fetchCards();
+  },
   components: {
     Header,
     
   }
-}
+  }
 
 
 </script>
