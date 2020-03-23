@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div id='contatos'>
         <br>
     <h1 style="color: white" > Fale Conosco </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
@@ -28,11 +28,11 @@
         ></b-form-input>
       </b-form-group>
 
-      
+      <p>Comentário: </p>
        <b-form-textarea
       id="textarea"
       v-model="form.text"
-      label="DIgite o seu Comentário"
+      label="Digite o seu Comentário"
       placeholder="Digite o seu comentário"
       rows="3"
       max-rows="6"
@@ -40,7 +40,7 @@
     ></b-form-textarea>
 
       <div id='botões'>
-        <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_login'>Enviar Comentário</b-button>
+        <b-button pill type="submit" variant="primary" aria-pressed="false" class="m-2" id='b_enviar'>Enviar Comentário</b-button>
         <b-button pill type="reset" variant="danger" aria-pressed="false" class="m-2" id='b_recuperar'>Resetar </b-button>
       </div>
     </b-form>
@@ -98,36 +98,45 @@ h1 {
   margin-top:10px;
   color:black;
   font-family: "theboldfont";
+  text-align:center;
 }
+
 #form{
     border: 1px white;
     width:50%;
-    font-size:20px;
+    font-size:1.1EM;
     margin:0 auto;
     margin-top: 2%;
     max-width: 500px;
+    font-family: "Beckman-free";
+
+}
+p{
+  color:white;
+  font-family: "Beckman-free";
+  margin:0 auto;
+  margin-top: 2%;
 
 }
 
 
-
-#b_login{
-  font-size: 20px;
-  width:200px;
-  background-color: green;
+#b_enviar{
+  font-size: 1.1EM;
+  width:220px;
+  background-color: blue;
 }
 
 #b_recuperar{
-  font-size: 20px;
-  width:200px;
+  font-size: 1.1EM;
+  width:220px;
 }
-
 
 #botões{
   max-width:500px;
   margin:0 auto;
-}
+  margin-bottom:10px;
 
+}
 
 
 

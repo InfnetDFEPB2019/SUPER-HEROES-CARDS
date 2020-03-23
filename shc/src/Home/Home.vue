@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div id='Home'>
       <Header/>
       <section id='JogarHome'>
       <JogarHome/>
@@ -57,4 +57,8 @@ export default {
   background-color:rgba(0,0,255,0.3);
   
 }
+#Home{
+  background-color:black;
+}
+
 </style>

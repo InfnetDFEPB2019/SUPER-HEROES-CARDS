@@ -14,26 +14,12 @@
         style="max-width: 13rem;"
         class="md-2"
       >
-        <b-card-text>
-          {{ card.powerstats | formatarCardInf()}}
-        </b-card-text>
+        <b-button  @click="$bvModal.show(card.id)" id='bot_detalhes'>Detalhes</b-button>
 
-        <b-button href="#" variant="primary">Comparar</b-button>
-        <b-button v-b-modal.modal-1>Detalhes</b-button>
+        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered ok-only ok-title="Fechar" ok-variant="danger " auto-focus-button="ok">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 9fe9958... Update Cartas.vue
-        <b-modal id="modal-1" title="BootstrapVue">
-=======
-        <b-modal  id="modal-1" centered title="BootstrapVue">
->>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
-          <p class="my-4">Hello from modal!</p>
+         <div id='info_card'>        
           <b-card
-            :title="card.name"
             :img-src="card.image.url"
             :img-alt="card.name"
             img-top
@@ -42,21 +28,16 @@
             class="md-2"
           >
             <b-card-text>
-              {{ card.powerstats | formatarCardInf()}}
+              Inteligência: {{card.powerstats.intelligence}} <br>
+              Força: {{card.powerstats.strength}}<br>
+              Velocidade: {{card.powerstats.speed}}<br>
+              Durabilidade: {{card.powerstats.durability}}<br>
+              Poder: {{card.powerstats.power}}<br>
+              Combate: {{card.powerstats.combat}}
             </b-card-text>
           </b-card>
-          
+          </div>
         </b-modal>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        
->>>>>>> parent of 598b511... Revert "Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS"
-=======
->>>>>>> parent of 9fe9958... Update Cartas.vue
-=======
->>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
         
         
       </b-card>  
@@ -86,7 +67,12 @@ export default {
   components: {
     Header,
     
-  }
+  },
+  data() {
+      return {
+        modalShow: false
+      }
+    }
   }
 
 
@@ -108,15 +94,41 @@ export default {
 }
 .Area_cartas{
   display: flex;
+  margin-left:5px;
   flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
+  background-color:black;
   
 }
 .Cartas{
   display: flex;
-  margin: 5px
+  margin:5px;
+  text-align:center;
+  font-family:"Beckman-free";
+  height:410px;
 }
+
+#info_card{
+  display:flex;
+  justify-content:center;
+  font-family:"Conversation" ;
+  font-size:1.5EM;
+}
+#bot_detalhes{
+  position: absolute;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    bottom:0px;
+  margin-bottom:10px;
+  
+  
+  
+}
+
+
+
 
 
 </style>

@@ -1,12 +1,8 @@
 <template>
-   <div>
+   <div id='f_log'>
       <Header/>
 
       <Form_Login/>
-
-
-    
-
    </div>
 </template>
 
@@ -42,6 +38,8 @@ export default {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
 }
+
+
 
 
 </style>
