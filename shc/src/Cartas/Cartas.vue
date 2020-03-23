@@ -19,9 +19,9 @@
         </b-card-text>
 
         <b-button href="#" variant="primary">Comparar</b-button>
-        <b-button v-b-modal.modal-1>Detalhes</b-button>
+        <b-button  @click="$bvModal.show(card.id)">Detalhes</b-button>
 
-        <b-modal id="modal-1" title="BootstrapVue">
+        <b-modal :key="card.id" :id="card.id" title="BootstrapVue">
           <p class="my-4">Hello from modal!</p>
           <b-card
             :title="card.name"
@@ -67,7 +67,12 @@ export default {
   components: {
     Header,
     
-  }
+  },
+  data() {
+      return {
+        modalShow: false
+      }
+    }
   }
 
 
