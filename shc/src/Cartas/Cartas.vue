@@ -15,9 +15,26 @@
         class="md-2"
       >
 
-        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered ok-only ok-title="Fechar" ok-variant="danger " auto-focus-button="ok">
+        <b-button href="#" variant="primary">Comparar</b-button>
+        <b-button v-b-modal.modal-1>Detalhes</b-button>
 
-        
+        <b-modal  id="modal-1" centered title="BootstrapVue">
+          <p class="my-4">Hello from modal!</p>
+          <b-card
+            :title="card.name"
+            :img-src="card.image.url"
+            :img-alt="card.name"
+            img-top
+            tag="article"
+            style="max-width: 13rem;"
+            class="md-2"
+          >
+            <b-card-text>
+              {{ card.powerstats | formatarCardInf()}}
+            </b-card-text>
+          </b-card>
+          
+        </b-modal>
         
         
       </b-card>
@@ -48,12 +65,7 @@ export default {
   components: {
     Header,
     
-  },
-  data() {
-      return {
-        modalShow: false
-      }
-    }
+  }
   }
 
 
@@ -75,41 +87,15 @@ export default {
 }
 .Area_cartas{
   display: flex;
-  margin-left:5px;
   flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
-  background-color:black;
   
 }
 .Cartas{
   display: flex;
-  margin:5px;
-  text-align:center;
-  font-family:"Beckman-free";
-  height:410px;
+  margin: 5px
 }
-
-#info_card{
-  display:flex;
-  justify-content:center;
-  font-family:"Conversation" ;
-  font-size:1.5EM;
-}
-#bot_detalhes{
-  position: absolute;
-    left: 50%;
-    width: 100px;
-    margin-left: -50px;
-    bottom:0px;
-  margin-bottom:10px;
-  
-  
-  
-}
-
-
-
 
 
 </style>

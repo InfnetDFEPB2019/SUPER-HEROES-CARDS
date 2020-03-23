@@ -85,12 +85,8 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size:50px;
-  margin-top:100px;
-  color:black;
-  font-family: "theboldfont";
-  text-align:center;
+h1{
+    font-size: 30px;
 }
 #form{
     border: 1px white;
@@ -98,29 +94,25 @@ h1 {
     font-size:20px;
     margin:0 auto;
     margin-top: 2%;
-    max-width: 450px;
-    color:black;
-   font-family: "Beckman-free";
-   font-size:1.1EM;
-   text-align:center;
+    max-width: 500px;
     
 
 }
 
 #b_login{
-  font-size: 1EM;
+  font-size: 20px;
   width:200px;
   background-color: green;
 }
 
 #b_recuperar{
-  font-size: 1EM;
+  font-size: 20px;
   width:200px;
 }
 
 #b_cadastro{
-  font-size: 1EM;
-  width:200px;
+  font-size: 20px;
+  width:300px;
   background-color: orange;
 }
 
