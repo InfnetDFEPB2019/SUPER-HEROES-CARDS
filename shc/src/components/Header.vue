@@ -62,6 +62,9 @@ function scrollFunction() {
 }
 .header{
   display: flex;
+  transition: 0.5s; /* Adds a transition effect when the padding is decreased */
+  width: auto;
+  height: auto;
 }
 #logo{
   width:45px;
