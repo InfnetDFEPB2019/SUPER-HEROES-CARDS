@@ -11,7 +11,7 @@
             <b-nav-item href="/jogar">Jogar</b-nav-item>
             <b-nav-item-dropdown center>
               <template v-slot:button-content>
-                <em>Usuário</em>
+                <em>User</em>
               </template>
               <b-dropdown-item href="/login">Login</b-dropdown-item>
               <b-dropdown-item href="/cadastro">Cadastro</b-dropdown-item>

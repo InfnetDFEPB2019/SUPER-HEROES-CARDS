@@ -1,6 +1,6 @@
 <template>
 
-    <div id='form_cad'>
+    <div>
         <br>
     <h1 class="text-center"> Cadastro </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
@@ -112,26 +112,18 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size:50px;
-  margin-top:100px;
-  color:black;
-  font-family: "theboldfont";
-  text-align:center;
+h1{
+    font-size: 30px;
 }
-
 #form{
     border: 1px white;
     width:50%;
     font-size:20px;
     margin:0 auto;
+    margin-top: 2%;
     max-width: 500px;
-    text-align:center;
-    color:black;
-   font-family: "Beckman-free";
-   font-size:1.1EM;
-}
 
+}
 
 
 
