@@ -22,10 +22,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-        <b-modal id="modal-1" title="BootstrapVue">
+<<<<<<< HEAD
 =======
-        <b-modal  id="modal-1" centered title="BootstrapVue">
->>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
+>>>>>>> parent of 9fe9958... Update Cartas.vue
+        <b-modal id="modal-1" title="BootstrapVue">
           <p class="my-4">Hello from modal!</p>
           <b-card
             :title="card.name"
@@ -43,12 +43,13 @@
           
         </b-modal>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         
 >>>>>>> parent of 598b511... Revert "Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS"
-        
 =======
->>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
+>>>>>>> parent of 9fe9958... Update Cartas.vue
+        
         
       </b-card>  
       
