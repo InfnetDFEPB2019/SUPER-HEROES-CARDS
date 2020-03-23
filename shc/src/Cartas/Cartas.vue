@@ -14,11 +14,14 @@
         style="max-width: 13rem;"
         class="md-2"
       >
+        <b-card-text>
+          {{ card.powerstats | formatarCardInf()}}
+        </b-card-text>
 
         <b-button href="#" variant="primary">Comparar</b-button>
         <b-button v-b-modal.modal-1>Detalhes</b-button>
 
-        <b-modal  id="modal-1" centered title="BootstrapVue">
+        <b-modal id="modal-1" title="BootstrapVue">
           <p class="my-4">Hello from modal!</p>
           <b-card
             :title="card.name"
@@ -37,8 +40,7 @@
         </b-modal>
         
         
-      </b-card>
-      
+      </b-card>  
       
     </div>
       
