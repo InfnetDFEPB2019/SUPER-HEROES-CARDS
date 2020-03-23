@@ -18,7 +18,7 @@
           {{ card.powerstats | formatarCardInf()}}
         </b-card-text>
 
-        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered ok-only ok-title="Fechar" ok-variant="danger " auto-focus-button="ok">
+        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered>
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,7 +116,6 @@ export default {
   margin:5px;
   text-align:center;
   font-family:"Beckman-free";
-  height:410px;
 }
 
 #info_card{
@@ -124,17 +123,6 @@ export default {
   justify-content:center;
   font-family:"Conversation" ;
   font-size:1.5EM;
-}
-#bot_detalhes{
-  position: absolute;
-    left: 50%;
-    width: 100px;
-    margin-left: -50px;
-    bottom:0px;
-  margin-bottom:10px;
-  
-  
-  
 }
 
 
