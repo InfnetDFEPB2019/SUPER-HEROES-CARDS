@@ -21,7 +21,11 @@
         <b-button href="#" variant="primary">Comparar</b-button>
         <b-button v-b-modal.modal-1>Detalhes</b-button>
 
+<<<<<<< HEAD
         <b-modal id="modal-1" title="BootstrapVue">
+=======
+        <b-modal  id="modal-1" centered title="BootstrapVue">
+>>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
           <p class="my-4">Hello from modal!</p>
           <b-card
             :title="card.name"
@@ -38,7 +42,10 @@
           </b-card>
           
         </b-modal>
+<<<<<<< HEAD
         
+=======
+>>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
         
       </b-card>  
       
