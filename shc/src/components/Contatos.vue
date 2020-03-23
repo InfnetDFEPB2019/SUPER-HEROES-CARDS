@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div id='contatos'>
         <br>
     <h1 style="color: white" > Fale Conosco </h1>
     <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
@@ -121,14 +121,14 @@ p{
 
 
 #b_enviar{
-  font-size: 20px;
-  width:200px;
+  font-size: 1.1EM;
+  width:220px;
   background-color: blue;
 }
 
 #b_recuperar{
-  font-size: 20px;
-  width:200px;
+  font-size: 1.1EM;
+  width:220px;
 }
 
 #botões{
@@ -137,8 +137,6 @@ p{
   margin-bottom:10px;
 
 }
-
-
 
 
 
