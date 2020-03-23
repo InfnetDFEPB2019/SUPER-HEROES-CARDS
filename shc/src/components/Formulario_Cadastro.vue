@@ -115,7 +115,7 @@ export default {
 h1 {
   font-size:50px;
   margin-top:100px;
-  color:white;
+  color:black;
   font-family: "theboldfont";
   text-align:center;
 }
@@ -127,7 +127,7 @@ h1 {
     margin:0 auto;
     max-width: 500px;
     text-align:center;
-    color:white;
+    color:black;
    font-family: "Beckman-free";
    font-size:1.1EM;
 }

@@ -16,7 +16,7 @@
       >
         <b-button  @click="$bvModal.show(card.id)" id='bot_detalhes'>Detalhes</b-button>
 
-        <b-modal :key="card.id" :id="card.id" :title='card.name' >
+        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered>
 
          <div id='info_card'>        
           <b-card
@@ -94,10 +94,11 @@ export default {
 }
 .Area_cartas{
   display: flex;
-  justify-content:space-around;
+  margin-left:5px;
   flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
+  background-color:black;
   
 }
 .Cartas{
