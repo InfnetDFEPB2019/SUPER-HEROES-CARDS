@@ -18,9 +18,9 @@
           {{ card.powerstats | formatarCardInf()}}
         </b-card-text>
 
-        <b-button href="#" variant="primary">Comparar</b-button>
-        <b-button v-b-modal.modal-1>Detalhes</b-button>
+        <b-modal  :key="card.id" :id="card.id" :title='card.name' centered ok-only ok-title="Fechar" ok-variant="danger " auto-focus-button="ok">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         <b-modal id="modal-1" title="BootstrapVue">
 =======
@@ -43,6 +43,9 @@
           
         </b-modal>
 <<<<<<< HEAD
+=======
+        
+>>>>>>> parent of 598b511... Revert "Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS"
         
 =======
 >>>>>>> parent of 43dd167... Merge branch 'master' of https://github.com/InfnetDFEPB2019/SUPER-HEROES-CARDS
@@ -74,7 +77,12 @@ export default {
   components: {
     Header,
     
-  }
+  },
+  data() {
+      return {
+        modalShow: false
+      }
+    }
   }
 
 
@@ -96,15 +104,41 @@ export default {
 }
 .Area_cartas{
   display: flex;
+  margin-left:5px;
   flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
+  background-color:black;
   
 }
 .Cartas{
   display: flex;
-  margin: 5px
+  margin:5px;
+  text-align:center;
+  font-family:"Beckman-free";
+  height:410px;
 }
+
+#info_card{
+  display:flex;
+  justify-content:center;
+  font-family:"Conversation" ;
+  font-size:1.5EM;
+}
+#bot_detalhes{
+  position: absolute;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    bottom:0px;
+  margin-bottom:10px;
+  
+  
+  
+}
+
+
+
 
 
 </style>
