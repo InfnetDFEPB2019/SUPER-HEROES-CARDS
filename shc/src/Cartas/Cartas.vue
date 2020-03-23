@@ -14,17 +14,12 @@
         style="max-width: 13rem;"
         class="md-2"
       >
-        <b-card-text>
-          {{ card.powerstats | formatarCardInf()}}
-        </b-card-text>
+        <b-button  @click="$bvModal.show(card.id)" id='bot_detalhes'>Detalhes</b-button>
 
-        <b-button href="#" variant="primary">Comparar</b-button>
-        <b-button  @click="$bvModal.show(card.id)">Detalhes</b-button>
+        <b-modal :key="card.id" :id="card.id" :title='card.name' >
 
-        <b-modal :key="card.id" :id="card.id" title="BootstrapVue">
-          <p class="my-4">Hello from modal!</p>
+         <div id='info_card'>        
           <b-card
-            :title="card.name"
             :img-src="card.image.url"
             :img-alt="card.name"
             img-top
@@ -33,10 +28,15 @@
             class="md-2"
           >
             <b-card-text>
-              {{ card.powerstats | formatarCardInf()}}
+              Inteligência: {{card.powerstats.intelligence}} <br>
+              Força: {{card.powerstats.strength}}<br>
+              Velocidade: {{card.powerstats.speed}}<br>
+              Durabilidade: {{card.powerstats.durability}}<br>
+              Poder: {{card.powerstats.power}}<br>
+              Combate: {{card.powerstats.combat}}
             </b-card-text>
           </b-card>
-          
+          </div>
         </b-modal>
         
         
@@ -94,6 +94,7 @@ export default {
 }
 .Area_cartas{
   display: flex;
+  justify-content:space-around;
   flex-wrap: wrap;
   padding: 10px;
   margin-top: 117px;
@@ -101,8 +102,20 @@ export default {
 }
 .Cartas{
   display: flex;
-  margin: 5px
+  margin:5px;
+  text-align:center;
+  font-family:"Beckman-free";
 }
+
+#info_card{
+  display:flex;
+  justify-content:center;
+  font-family:"Conversation" ;
+  font-size:1.5EM;
+}
+
+
+
 
 
 </style>

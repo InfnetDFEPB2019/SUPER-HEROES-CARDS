@@ -3,10 +3,6 @@
       <Header/>
 
       <Form_Login/>
-
-
-    
-
    </div>
 </template>
 

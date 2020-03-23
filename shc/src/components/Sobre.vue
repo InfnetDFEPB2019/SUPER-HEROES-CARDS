@@ -1,11 +1,10 @@
 <template>
    <div class="areasobre">
       <h1 style="color: white"> Sobre </h1>
+      <h2 style="color: white"> Um projeto agregador de conhecimentos, experiências e desafios </h2>
 
       <section id='texto'>
-          
-          <h2 style="color: white"> Um projeto agregador de conhecimentos, experiências e desafios </h2>
-          <p style="color: white">
+          <p>
               Esse jogo foi construído com o intuito de integrar todos os conhecimentos obtidos ao longo do bloco de Front-End, para a 
               disciplina Projeto de Bloco - Desenvolvimento Front-End. 
               Durante esse bloco aprendemos a utilizar o JavaScript, HTML, CSS e frameworks que auxiliam na programação e construção de sites reativos e 
@@ -13,25 +12,19 @@
               O caminho para a construção do site foi complexo, cheio de pedras e diversos obstáculos, muitas vezes o conhecimento obtido em sala
               não foi o suficiente e o grupo teve que buscar informações além do já ensinado. 
           </p>
-          <br>
-          <p style="color: white">
+          <p>
               A equipe de desenvolvimento desse projeto foi composta por 4 pessoas: Leonardo Ewbank, Nathan Borges, Marcos Aurelios, Matheus Matos.  
          </p>
+         <br>
           
 
       </section>
 
     </div>
-    
-        
-    
-
 
 </template>
 
 <script>
-
-
 
 
 export default {
@@ -64,19 +57,30 @@ h1 {
   margin-top:10px;
   color:black;
   font-family: "theboldfont";
+  text-align:center;
+}
+
+h2{
+  text-align:center;
+   font-family: "theboldfont";
+}
+
+p{
+  color:white;
+   font-family: "Beckman-free";
+   font-size:1.1EM;
+   text-align:justify;
 }
 
 #texto{
   margin:0 auto;
   display:block;
-  width: 1000px;
-}
-.p{
-  margin-bottom:10px;
+  width: 70%;
+  margin-bottom:5px;
+  text-align:justify;
 }
 .areasobre{
   background-color:rgba(133, 12, 12);
-
 }
 
 

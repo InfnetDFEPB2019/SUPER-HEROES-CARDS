@@ -1,14 +1,10 @@
 <template>
-   <div>
+   <div id="pag_cad">
       <Header/>
 
       <FormCadastro/>
 
     </div>
-    
-        
-    
-
 
 </template>
 
@@ -42,6 +38,7 @@ export default {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
 }
+
 
 
 </style>
