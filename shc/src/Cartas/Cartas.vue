@@ -17,6 +17,10 @@
         tag="article"
         style="max-width: 13rem;"
         class="md-2"
+        :style="card.powerstats.intelligence==100 || card.powerstats.strength==100 || card.powerstats.speed==100 ||card.powerstats.durability==100 ||card.powerstats.power==100 || card.powerstats.combat==100 ? 'border:5px solid gold':'border:5px solid black'"
+          
+        
+        
       >
         <b-button  @click="$bvModal.show(card.id)" id='bot_detalhes'>Detalhes</b-button>
 
@@ -30,7 +34,7 @@
             tag="article"
             style="max-width: 13rem;"
             class="md-2"
-          >
+            >
             <b-card-text>
               Inteligência: {{card.powerstats.intelligence}} <br>
               Força: {{card.powerstats.strength}}<br>
