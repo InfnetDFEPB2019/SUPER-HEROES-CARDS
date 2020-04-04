@@ -46,6 +46,7 @@
           </b-card>
           </div>
         </b-modal>
+        <i @click='removeCard(card.id)' title="Remover"><img src='../assets/coron.jpg' id='bot_rem'/> </i>
         
         
       </b-card>  
@@ -66,7 +67,7 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   name: 'Cartas',
    methods: {
-    ...mapActions(["fetchCards"]),
+    ...mapActions(["fetchCards","removeCard"]),
 
   },
   computed: mapGetters(["allCards"]),
@@ -128,12 +129,20 @@ export default {
   position: absolute;
     left: 50%;
     width: 100px;
-    margin-left: -50px;
+    margin-left: -90px;
     bottom:0px;
-  margin-bottom:10px;
-  
-  
-  
+  margin-bottom:10px;  
+}
+#bot_rem{
+
+   position: absolute;
+    left: 50%;
+    width: 70px;
+    margin-left:20px;
+    bottom:0px;
+  margin-bottom:10px; 
+  cursor:pointer;
+  border-radius: 100%;
 }
 .backfix{
   background-color: #2f4f4f
