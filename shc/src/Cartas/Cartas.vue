@@ -1,6 +1,10 @@
 <template>
   <div>
     <Header/>
+  <br>
+  <br>
+  <br>
+    <addCart style="margin-top:30px;"/>
   <section class="Area_cartas">
     
     <div v-for ="card in allCards" :key="card.id" class="Cartas">
@@ -52,6 +56,7 @@
 <script>
 
 import Header from '../components/Header'
+import addCart from '../components/addCartas'
 import { mapGetters, mapActions } from "vuex";
 
 export default {
@@ -66,6 +71,7 @@ export default {
   },
   components: {
     Header,
+    addCart
     
   },
   data() {
@@ -94,10 +100,9 @@ export default {
 }
 .Area_cartas{
   display: flex;
-  margin-left:5px;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 117px;
+  margin-top: -10px;
   background-color:black;
   
 }

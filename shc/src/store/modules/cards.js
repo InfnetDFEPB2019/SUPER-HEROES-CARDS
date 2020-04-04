@@ -63,12 +63,33 @@ const actions = {
   fetchCards({ commit }) {
       commit("setCards");
   },
+  addCartas({commit}, add_card){
+    const new_ind = state.cards.length + 1;
+    const resp = {
+      "id":new_ind,
+      "name":add_card.name,
+      "powerstats":{
+        "intelligence":add_card.powerstats.intelligence,
+        "strength":add_card.powerstats.strength,
+        "speed":add_card.powerstats.speed,
+        "durability":add_card.powerstats.durability,
+        "power":add_card.powerstats.power,
+        "combat":add_card.powerstats.combat,
+      },
+      "image":{
+        "url":add_card.image.url
+      }
+    }
+    commit("newCard",resp)
+  },
 
   
   
 };
 const mutations = {
   setCards: (state) => state.cards ,
+  newCard:(state,n_card) => state.cards.push(n_card),
+
   
 };
 
