@@ -8,7 +8,7 @@
       
     </div>
 
-  <b-form @submit.prevent="onSubmit" v-if="mostrarJogos"  id="form">
+    <b-form @submit.prevent="onSubmit" v-if="mostrarJogos"  id="form">
 
         <label for="name">Nome:</label>
         <br/>
@@ -111,7 +111,6 @@ export default {
 #addd{
   margin:0 auto;
   text-align:center;
-  background: rgb(0,0,0);
   font-family: 'Revamped',Arial, Helvetica, sans-serif;
 }
 #form{
@@ -120,12 +119,12 @@ export default {
   margin:0 auto;
   text-align:center;
   width:100%;
-  background: black;
   color: white;
   margin-top: -10px;
 
 
 }
+
 #btn_acesso{
   font-size:1.5Em;
   background-color:mediumseagreen; 

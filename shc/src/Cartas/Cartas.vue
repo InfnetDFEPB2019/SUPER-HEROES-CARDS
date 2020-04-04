@@ -107,7 +107,6 @@ export default {
   flex-wrap: wrap;
   padding: 10px;
   margin-top: -10px;
-  background-color:black;
   
 }
 .Cartas{
@@ -136,7 +135,20 @@ export default {
   
 }
 .backfix{
-  background-color: #2f4f4f
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #2f4f4f;
+	background: url("../assets/batman.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position-y: 0;
+	opacity: 1;
+	color: #010102;
+  background-attachment: fixed;
 }
 
 
