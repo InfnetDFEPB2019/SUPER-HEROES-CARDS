@@ -62,7 +62,8 @@ export default {
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
-        alert(JSON.stringify(this.form))
+        this.$router.push("jogar")
+       
       },
       onReset(evt) {
         evt.preventDefault()
