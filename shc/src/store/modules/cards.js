@@ -82,6 +82,9 @@ const actions = {
     }
     commit("newCard",resp)
   },
+  removeCard({commit},id){
+    commit("deletarCard",id)
+  }
 
   
   
@@ -89,6 +92,7 @@ const actions = {
 const mutations = {
   setCards: (state) => state.cards ,
   newCard:(state,n_card) => state.cards.push(n_card),
+  deletarCard:(state,id) => (state.cards = state.cards.filter(t=>t.id!==id)),
 
   
 };

@@ -89,7 +89,7 @@ export default {
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
-        alert(JSON.stringify(this.form))
+         this.$router.push("jogar")
       },
       onReset(evt) {
         evt.preventDefault()
@@ -129,7 +129,7 @@ h1 {
     max-width: 500px;
     text-align:center;
     color:black;
-   font-family: "Beckman-free";
+   font-family: Arial,"Beckman-free";
    font-size:1.1EM;
    
 }
