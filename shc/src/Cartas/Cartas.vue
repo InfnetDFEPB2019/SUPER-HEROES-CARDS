@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="backfix">
     <Header/>
   <br>
   <br>
@@ -131,7 +131,9 @@ export default {
   
   
 }
-
+.backfix{
+  background-color: #2f4f4f
+}
 
 
 

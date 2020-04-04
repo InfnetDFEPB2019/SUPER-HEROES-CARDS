@@ -142,7 +142,9 @@ export default {
 #btn_add{
   margin-top:10px;
 }
-
+input{
+  border-radius: 8px;
+}
 
 
 </style>

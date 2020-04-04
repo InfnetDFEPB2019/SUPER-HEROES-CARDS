@@ -58,7 +58,7 @@ export default {
   
 }
 #Home{
-  background-color:black;
+  background-color: #2f4f4f
 }
 
 </style>
