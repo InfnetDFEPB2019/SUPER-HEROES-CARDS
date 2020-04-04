@@ -4,7 +4,7 @@
      <div id="addd">
     
       <br>
-      <a v-on:click='mostrarArq'> <img id="btn_acesso" src="../assets/logo.png" /> <h1 > Adicionar herói </h1> </a>
+      <a v-on:click='mostrarArq'> <img id="btn_acesso" src="../assets/logo.png" /> <h1 id='text_add'> Adicionar herói </h1> </a>
       
     </div>
 
@@ -141,6 +141,10 @@ export default {
 
 #btn_add{
   margin-top:10px;
+}
+#text_add{
+  cursor:pointer;
+  color:white;
 }
 
 
