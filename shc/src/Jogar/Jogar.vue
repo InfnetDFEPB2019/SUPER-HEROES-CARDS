@@ -8,13 +8,13 @@
   <section class="Area_cartas">
 
      
-    <div :card="CardsID(2)"   class="Cartas1">
+    <div :card="CardsID(a)"   class="Cartas1">
       
    
       <b-card
-        :title="CardsID(2).name"
-        :img-src="CardsID(2).image.url"
-        :img-alt="CardsID(2).name"
+        :title="CardsID(parseInt(a)).name"
+        :img-src="CardsID(parseInt(a)).image.url"
+        :img-alt="CardsID(a).name"
         img-top
         tag="article"
         style="max-width: 16rem;"
@@ -23,22 +23,22 @@
         >
         <b-card-text class="Cartas1Text">
           <div class="formatarStatus">
-              Inteligência: {{CardsID(2).powerstats.intelligence}}<button class="botaointel" @click="comparar(CardsID(2).powerstats.intelligence,CardsID(3).powerstats.intelligence)" > escolher </button>
+              Inteligência: {{CardsID(a).powerstats.intelligence}}<button class="botaointel" @click="comparar(CardsID(a).powerstats.intelligence,CardsID(b).powerstats.intelligence)" > escolher </button>
           </div>
           <div class="formatarStatus">
-              Força: {{CardsID(2).powerstats.strength}}<button class="botaoforça" @click="comparar(CardsID(2).powerstats.strength,CardsID(3).powerstats.strength)" > escolher </button>
+              Força: {{CardsID(a).powerstats.strength}}<button class="botaoforça" @click="comparar(CardsID(a).powerstats.strength,CardsID(b).powerstats.strength)" > escolher </button>
           </div> 
           <div class="formatarStatus">   
-              Velocidade: {{CardsID(2).powerstats.speed}}<button class="botaoveloci" @click="comparar(CardsID(2).powerstats.speed,CardsID(3).powerstats.speed)" > escolher </button>
+              Velocidade: {{CardsID(a).powerstats.speed}}<button class="botaoveloci" @click="comparar(CardsID(a).powerstats.speed,CardsID(b).powerstats.speed)" > escolher </button>
           </div>
           <div class="formatarStatus">    
-              Durabilidade: {{CardsID(2).powerstats.durability}}<button @click="comparar(CardsID(2).powerstats.durability,CardsID(3).powerstats.durability)" > escolher </button>
+              Durabilidade: {{CardsID(a).powerstats.durability}}<button @click="comparar(CardsID(a).powerstats.durability,CardsID(b).powerstats.durability)" > escolher </button>
           </div>
           <div class="formatarStatus">    
-              Poder: {{CardsID(2).powerstats.power}}<button class="botaopoder" @click="comparar(CardsID(2).powerstats.power,CardsID(3).powerstats.power)" > escolher </button>
+              Poder: {{CardsID(a).powerstats.power}}<button class="botaopoder" @click="comparar(CardsID(a).powerstats.power,CardsID(b).powerstats.power)" > escolher </button>
           </div>             
           <div class="formatarStatus">    
-              Combate: {{CardsID(2).powerstats.combat}}<button class="botaocombate" @click="comparar(CardsID(2).powerstats.combat,CardsID(3).powerstats.combat)" > escolher </button>
+              Combate: {{CardsID(a).powerstats.combat}}<button class="botaocombate" @click="comparar(CardsID(a).powerstats.combat,CardsID(b).powerstats.combat)" > escolher </button>
           </div>
         </b-card-text>
       </b-card>  
@@ -47,13 +47,13 @@
     <div class="vs">
       <h1> VS </h1>
     </div>
-    <div :card="CardsID(3)"   class="Cartas">
+    <div :card="CardsID(b)"   class="Cartas">
       
    
       <b-card 
-        :title="CardsID(3).name"
-        :img-src="CardsID(3).image.url"
-        :img-alt="CardsID(3).name"
+        :title="CardsID(b).name"
+        :img-src="CardsID(b).image.url"
+        :img-alt="CardsID(b).name"
         img-top
         tag="article"
         style="max-width: 16rem;"
@@ -61,12 +61,12 @@
 
         >
         <b-card-text v-show="hide" >
-              Inteligência: {{CardsID(3).powerstats.intelligence}} <br>
-              Força: {{CardsID(3).powerstats.strength}}<br>
-              Velocidade: {{CardsID(3).powerstats.speed}}<br>
-              Durabilidade: {{CardsID(3).powerstats.durability}}<br>
-              Poder: {{CardsID(3).powerstats.power}}<br>
-              Combate: {{CardsID(3).powerstats.combat}}
+              Inteligência: {{CardsID(b).powerstats.intelligence}} <br>
+              Força: {{CardsID(b).powerstats.strength}}<br>
+              Velocidade: {{CardsID(b).powerstats.speed}}<br>
+              Durabilidade: {{CardsID(b).powerstats.durability}}<br>
+              Poder: {{CardsID(b).powerstats.power}}<br>
+              Combate: {{CardsID(b).powerstats.combat}}
             </b-card-text>
       </b-card>  
       
@@ -94,6 +94,7 @@ export default {
       if(status1 > status2 ){
         
         alert("voce ganhou")
+        
       }
       else if(status2 > status1){
         alert("voce perdeu")
@@ -101,10 +102,14 @@ export default {
       else{
         alert("os atributos tem o mesmo valor. Por favor escolha outro ")
       }
-     
-      
-    }
 
+       window.location.reload()
+  }, 
+  
+      
+
+    
+    
   },
   computed: mapGetters(["allCards","CardsID"]),
   created() {
@@ -119,12 +124,15 @@ export default {
       return {
         modalShow: false,
         hide: false,
+        a: parseInt(Math.random() * (52 - 1) + 1) ,
+        b: parseInt(Math.random() * (52 - 1) + 1) 
         
     }
   },
  
   props:{
     card:{type: Object}
+   
   }
 }
 
