@@ -85,7 +85,7 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   name: 'Cartas',
    methods: {
-    ...mapActions(["fetchCards","removeCard"]),
+    ...mapActions(["removeCard"]),
     comparar(status1 ,status2){
       status1= parseInt(status1)
       status2= parseInt(status2)
@@ -116,9 +116,7 @@ export default {
     
   },
   computed: mapGetters(["allCards","CardsID"]),
-  created() {
-    this.fetchCards();
-  },
+  
   components: {
     HeaderJogo,
  

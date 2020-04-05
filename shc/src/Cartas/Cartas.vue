@@ -76,13 +76,11 @@ import { mapGetters, mapActions } from "vuex";
 export default {
   name: 'Cartas',
    methods: {
-    ...mapActions(["fetchCards","removeCard"]),
+    ...mapActions(["removeCard"]),
 
   },
   computed: mapGetters(["allCards"]),
-  created() {
-    this.fetchCards();
-  },
+  
   components: {
     Header,
     addCart

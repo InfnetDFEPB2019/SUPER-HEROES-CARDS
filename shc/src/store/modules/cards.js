@@ -61,9 +61,7 @@ const getters = {
   CardsID: (state) => (id) => (state.cards.filter(t => t.id == id))[0]
 };
 const actions = {
-  fetchCards({ commit }) {
-      commit("setCards");
-  },
+
   addCartas({commit}, add_card){
     const new_ind = state.cards.length + 1;
     const resp = {
@@ -91,7 +89,7 @@ const actions = {
   
 };
 const mutations = {
-  setCards: (state) => state.cards ,
+  
   newCard:(state,n_card) => state.cards.push(n_card),
   deletarCard:(state,id) => (state.cards = state.cards.filter(t=>t.id!==id)),
 
