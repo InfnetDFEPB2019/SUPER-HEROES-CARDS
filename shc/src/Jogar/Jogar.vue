@@ -195,6 +195,7 @@ h1{
   font-family:"Beckman-free";
   height:auto;
   width: auto;
+  font-size: 15px;
 }
 .Cartas1Text{
   width: auto;
@@ -202,32 +203,17 @@ h1{
 }
 .formatarStatus{
   display: inline-flex;
-  margin: 0;
   padding: 2px;
+  width: 100%;
   
 }
-.botaointel{
-  margin-left: 3px;
-}
-.botaoforça{
-  margin-left: 55px;
-}
-.botaoveloci{
-  margin-left: 17px;
-}
-.botaopoder{
-  margin-left: 56px;
-}
-.botaocombate{
-  margin-left: 30px;
-}
+
 #info_card{
   justify-content:center;
   font-family:"Conversation" ;
   font-size:1.5EM;
 }
 #bot_detalhes{
-  position: absolute;
     left: 50%;
     width: 100px;
     margin-left: -90px;
@@ -235,8 +221,6 @@ h1{
   margin-bottom:10px;  
 }
 #bot_rem{
-
-   position: absolute;
     left: 50%;
     width: 70px;
     margin-left:20px;
@@ -246,7 +230,7 @@ h1{
   border-radius: 100%;
 }
 .backfix{
-  height: 140vh;
+  height: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -262,7 +246,7 @@ h1{
   background-attachment: fixed;
 }
 button{
-  font-size: 15px;
+  font-size: 13px;
   padding: 0px 0px;
   margin-left: 2px;
 }
