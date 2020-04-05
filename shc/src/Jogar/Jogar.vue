@@ -93,15 +93,15 @@ export default {
       console.log(status1)
       if(status1 > status2 ){
         
-        alert("voce ganhou")
+        alert("Você ganhou")
          window.location.reload()
       }
       else if(status2 > status1){
-        alert("voce perdeu")
+        alert("Você perdeu")
          window.location.reload()
       }
       if(status2==status1){
-        alert("os atributos tem o mesmo valor. Por favor escolha outro ");
+        alert("Os atributos tem o mesmo valor. Por favor escolha outro ");
        
       }
 
