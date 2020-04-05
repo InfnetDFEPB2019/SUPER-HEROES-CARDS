@@ -105,8 +105,10 @@ export default {
        
       }
 
+
       
   }, 
+
   
       
 
@@ -126,8 +128,8 @@ export default {
       return {
         modalShow: false,
         hide: false,
-        a: parseInt(Math.random() * (52 - 1) + 1) ,
-        b: parseInt(Math.random() * (52 - 1) + 1) 
+        a : parseInt(Math.random() * (52 - 1) + 1),
+        b : parseInt(Math.random() * (52 - 1) + 1), 
         
     }
   },
