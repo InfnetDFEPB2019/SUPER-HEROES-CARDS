@@ -170,7 +170,7 @@ export default {
   border-radius: 100%;
 }
 .backfix{
-  height: auto;
+  height: 140vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
