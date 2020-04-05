@@ -38,10 +38,12 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "10px 10px";
     document.getElementById("Logo-titulo").style.fontSize = "26px";
     document.getElementById("logo").style.width = "30px";
+    document.getElementById("s_bar").style.width = "150px";
   } else {
     document.getElementById("navbar").style.padding = "15px 10px";
     document.getElementById("Logo-titulo").style.fontSize = "45px";
     document.getElementById("logo").style.width = "45px";
+    document.getElementById("s_bar").style.width = "200px";
   }
 }
 
