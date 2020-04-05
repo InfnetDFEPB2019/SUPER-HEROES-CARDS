@@ -94,16 +94,18 @@ export default {
       if(status1 > status2 ){
         
         alert("voce ganhou")
-        
+         window.location.reload()
       }
       else if(status2 > status1){
         alert("voce perdeu")
+         window.location.reload()
       }
-      else{
-        alert("os atributos tem o mesmo valor. Por favor escolha outro ")
+      if(status2==status1){
+        alert("os atributos tem o mesmo valor. Por favor escolha outro ");
+       
       }
 
-       window.location.reload()
+      
   }, 
   
       
