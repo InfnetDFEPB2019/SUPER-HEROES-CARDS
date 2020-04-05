@@ -1,9 +1,9 @@
 <template>
-
-    <div>
-        <br>
+  
+    <div class="background">
+      <br>
     
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
+      <b-form @submit="onSubmit" @reset="onReset" v-if="show" id="form">
       <h1 class="text-center"> Login </h1>
       <b-form-group id="input-group-2" label="Nome de usuário:" label-for="input-2">
         <b-form-input
@@ -123,6 +123,23 @@ h1 {
   font-size: 1EM;
   width:200px;
   background-color: orange;
+}
+.background{
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #2f4f4f;
+	background: url("../assets/ironman.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position-y: 0;
+	opacity: 1;
+	color: #010102;
+  background-attachment: fixed;
+  
 }
 
 

@@ -54,7 +54,7 @@ export default {
 }
 
 #contatos{
-  background-color:rgba(0,0,255,0.3);
+  background-color:#008080;
   
 }
 #Home{
