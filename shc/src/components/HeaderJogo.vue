@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header">
+    <div class="headerJogo">
       <b-navbar id="navbar" toggleable="lg" type="dark" variant="info">
         <b-navbar-brand id="Logo-titulo" href="/"><img src="../assets/logo.png" id="logo"> Super Hero Cards</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -17,7 +17,6 @@
               <b-dropdown-item href="/cadastro">Cadastro</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item href="/cartas">Cartas</b-nav-item>
-            <input type="text" placeholder="  Busca" id="s_bar">
         
           </b-navbar-nav>
         </b-collapse>
@@ -29,7 +28,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HeaderJogo',
 }
 window.onscroll = function() {scrollFunction()};
 
@@ -39,9 +38,9 @@ function scrollFunction() {
     document.getElementById("Logo-titulo").style.fontSize = "26px";
     document.getElementById("logo").style.width = "30px";
   } else {
-    document.getElementById("navbar").style.padding = "15px 10px";
-    document.getElementById("Logo-titulo").style.fontSize = "45px";
-    document.getElementById("logo").style.width = "45px";
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("Logo-titulo").style.fontSize = "26px";
+    document.getElementById("logo").style.width = "30px";
   }
 }
 
@@ -61,14 +60,14 @@ function scrollFunction() {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
 }
-.header{
+.headerJogo{
   display: flex;
   transition: 0.5s; /* Adds a transition effect when the padding is decreased */
   width: auto;
   height: auto;
 }
 #logo{
-  width:45px;
+  width:30px;
   margin-left: 0;
   border-radius: 99%;
   align-items:left;
@@ -77,7 +76,7 @@ function scrollFunction() {
 .navbar{
   background-color: #2f4f4f!important;
   overflow: visible;
-  padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.5s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
@@ -91,11 +90,6 @@ ul.navbar-nav {
   width: 80%;
   align-items:center; 
   font-size: 21px
-}
-#s_bar{
-  width:200px;
-  margin-right:-100px;
-  border-radius:50px;
 }
 
 a{
@@ -111,7 +105,7 @@ a{
 }
 #Logo-titulo{
   font-family: Conversation;
-  font-size: 45px;
+  font-size: 26px;
   padding: 10px;
   transition: 0.5s;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="backfix">
-    <Header/>
+    <HeaderJogo/>
   <br>
   <br>
   <br>
@@ -78,7 +78,7 @@
 
 <script>
 
-import Header from '../components/Header'
+import HeaderJogo from '../components/HeaderJogo'
 
 import { mapGetters, mapActions } from "vuex";
 
@@ -116,7 +116,7 @@ export default {
     this.fetchCards();
   },
   components: {
-    Header,
+    HeaderJogo,
  
     
   },
@@ -160,7 +160,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 30px;
   justify-content: center;
   
 }
@@ -170,6 +169,13 @@ export default {
 h1{
   font-family: "SSF4";
   font-size: 90px;
+}
+#logo{
+  width:45px;
+  margin-left: 0;
+  border-radius: 99%;
+  align-items:left;
+  transition: 0.5s;
 }
 .Cartas{
   display: flex;
