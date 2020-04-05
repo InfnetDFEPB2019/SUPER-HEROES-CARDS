@@ -4,10 +4,11 @@
   <br>
   <br>
   <br>
-    <addCart style="margin-top:30px;"/>
+    <addCart style="margin-top:30px;"/> 
   <section class="Area_cartas">
     
     <div v-for ="card in allCards" :key="card.id" class="Cartas">
+      
      
       <b-card
         :title="card.name"
