@@ -11,38 +11,44 @@
     <b-form @submit.prevent="onSubmit" v-if="mostrarJogos"  id="form">
       <div class="formatarinput">
         <label for="name">Nome:</label>
-        <div class="divider"/>
+          
         <input type="text" id="name" name="name" placeholder="Insira o nome do herói" v-model="addCard.name" required />
       </div>
-        <br/>
+      <div class="formatarinput2">
         <label for="powerstat_intelligence">Inteligencia:</label>
-        <br/>
+    
         <input type="number" min="0" max="100" id="powerstat_intelligence" name="powerstat_intelligence" v-model="addCard.powerstats.intelligence" required/>
-        <br/>
+      </div>
+      <div class="formatarinput3">
         <label for="powerstat_strength">Força:</label>
-        <br/>
+        
         <input type="number" min="0" max="100" id="powerstat_strength" name="powerstat_strength" v-model="addCard.powerstats.strength" required/>
-        <br/>
+      </div>
+      <div class="formatarinput4">
         <label for="powerstat_speed">Velocidade:</label>
-        <br/>
+        
         <input type="number" min="0" max="100" id="powerstat_speed" name="powerstat_speed" v-model="addCard.powerstats.speed" required/>
-        <br/>
+      </div>  
+      <div class="formatarinput5">
         <label for="powerstat_durability">Durabilidade:</label>
-        <br/>
+       
         <input type="number" min="0" max="100" id="powerstat_durability" name="powerstat_durability" v-model="addCard.powerstats.durability" required/>
-        <br/>
+      </div> 
+      <div class="formatarinput6">
         <label for="powerstat_power">Poder:</label>
-        <br/>
+        
         <input type="number" min="0" max="100" id="powerstat_power" name="powerstat_power" v-model="addCard.powerstats.power" required/>
-        <br/>
+      </div>  
+      <div class="formatarinput7">
         <label for="powerstat_combat">Combate:</label>
-        <br/>
+        
         <input type="number" min="0" max="100" id="powerstat_combat" name="powerstat_combat" v-model="addCard.powerstats.combat" required/>
-        <br/>
-         <label for="img_url">Imagem:</label>
-        <br/>
+      </div>
+      <div class="formatarinput8">
+        <label for="img_url">Imagem:</label>
+        
         <input type="url"  id="img_url" name="img_url" v-model="addCard.image.url" required/>
-        <br/>
+      </div>
         
 
         <button type='submit' id="btn_add">Submit </button>
@@ -116,21 +122,72 @@ export default {
 }
 #form{
  
-  align-content: center;
+  align-content: left;
   margin:0 auto;
-  text-align:center;
+  text-align:left;
   width:100%;
   color: white;
   margin-top: -10px;
 
 
 }
+#powerstat_intelligence{
+  margin-left: 19px;
+}
+#powerstat_strength{
+  margin-left: 62px;
+}
+#powerstat_speed{
+  margin-left: 23px;
+}
+#powerstat_durability{
+  margin-left: 10px;
+}
+#powerstat_power{
+  margin-left: 59px;
+}
+#powerstat_combat{
+  margin-left: 36px;
+}
+#img_url{
+  margin-left: 0px;
+}
 input{
   border-radius: 8px;
+  margin-left: 10px;
+  text-align: center!important;
 }
 .formatarinput{
   display: inline-flex;
-  align-items: center;
+  margin: 0;
+}
+.formatarinput2{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput3{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput4{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput5{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput6{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput7{
+  display: inline-flex;
+  margin: 0;
+}
+.formatarinput8{
+  display: inline-flex;
+  margin: 0;
 }
 .divider{
     width:2px;
@@ -152,10 +209,15 @@ input{
 
 #btn_add{
   margin-top:10px;
+  margin-left: 40%;
 }
 #text_add{
   cursor:pointer;
   color:white;
+}
+form#form{
+  width: 20%;
+  
 }
 
 

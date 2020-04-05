@@ -128,7 +128,7 @@ h1 {
     margin:0 auto;
     max-width: 500px;
     text-align:center;
-    color:black;
+    color:whitesmoke;
    font-family: Arial,"Beckman-free";
    font-size:1.1EM;
    
