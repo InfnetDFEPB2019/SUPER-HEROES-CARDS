@@ -9,10 +9,11 @@
     </div>
 
     <b-form @submit.prevent="onSubmit" v-if="mostrarJogos"  id="form">
-
+      <div class="formatarinput">
         <label for="name">Nome:</label>
-        <br/>
+        <div class="divider"/>
         <input type="text" id="name" name="name" placeholder="Insira o nome do herói" v-model="addCard.name" required />
+      </div>
         <br/>
         <label for="powerstat_intelligence">Inteligencia:</label>
         <br/>
@@ -124,7 +125,18 @@ export default {
 
 
 }
-
+input{
+  border-radius: 8px;
+}
+.formatarinput{
+  display: inline-flex;
+  align-items: center;
+}
+.divider{
+    width:2px;
+    height:auto;
+    display:inline-block;
+}
 #btn_acesso{
   font-size:1.5Em;
   background-color:mediumseagreen; 
