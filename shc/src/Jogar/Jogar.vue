@@ -154,6 +154,7 @@ export default {
   padding: 10px;
   margin-top: 30px;
   justify-content: center;
+  margin-top:100px;
   
 }
 .vs{
