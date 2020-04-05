@@ -153,6 +153,7 @@ export default {
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
+  margin-top:100px;
   
 }
 .vs{

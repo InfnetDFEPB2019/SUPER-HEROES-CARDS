@@ -17,6 +17,7 @@
               <b-dropdown-item href="/cadastro">Cadastro</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item href="/cartas">Cartas</b-nav-item>
+            <input type="text" placeholder="  Busca" id="s_bar">
         
           </b-navbar-nav>
         </b-collapse>
@@ -90,6 +91,11 @@ ul.navbar-nav {
   width: 80%;
   align-items:center; 
   font-size: 21px
+}
+#s_bar{
+  width:200px;
+  margin-right:-100px;
+  border-radius:50px;
 }
 
 a{
