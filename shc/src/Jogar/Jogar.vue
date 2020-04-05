@@ -8,7 +8,7 @@
   <section class="Area_cartas">
 
      
-    <div :card="CardsID(2)"   class="Cartas">
+    <div :card="CardsID(2)"   class="Cartas1">
       
    
       <b-card
@@ -17,22 +17,37 @@
         :img-alt="CardsID(2).name"
         img-top
         tag="article"
-        style="max-width: 13rem;"
+        style="max-width: 16rem;"
         class="md-2"
 
         >
-        <b-card-text>
-              Inteligência: {{CardsID(2).powerstats.intelligence}} <br><button @click="comparar(CardsID(2).powerstats.intelligence,CardsID(3).powerstats.intelligence)" > escolher </button>
-              Força: {{CardsID(2).powerstats.strength}}<br><button @click="comparar(CardsID(2).powerstats.strength,CardsID(3).powerstats.strength)" > escolher </button>
-              Velocidade: {{CardsID(2).powerstats.speed}}<br><button @click="comparar(CardsID(2).powerstats.speed,CardsID(3).powerstats.speed)" > escolher </button>
-              Durabilidade: {{CardsID(2).powerstats.durability}}<br><button @click="comparar(CardsID(2).powerstats.durability,CardsID(3).powerstats.durability)" > escolher </button>
-              Poder: {{CardsID(2).powerstats.power}}<br><button @click="comparar(CardsID(2).powerstats.power,CardsID(3).powerstats.power)" > escolher </button>
-              Combate: {{CardsID(2).powerstats.combat}}<button @click="comparar(CardsID(2).powerstats.combat,CardsID(3).powerstats.combat)" > escolher </button>
-            </b-card-text>
+        <b-card-text class="Cartas1Text">
+          <div class="formatarStatus">
+              Inteligência: {{CardsID(2).powerstats.intelligence}}<button class="botaointel" @click="comparar(CardsID(2).powerstats.intelligence,CardsID(3).powerstats.intelligence)" > escolher </button>
+          </div>
+          <div class="formatarStatus">
+              Força: {{CardsID(2).powerstats.strength}}<button class="botaoforça" @click="comparar(CardsID(2).powerstats.strength,CardsID(3).powerstats.strength)" > escolher </button>
+          </div> 
+          <div class="formatarStatus">   
+              Velocidade: {{CardsID(2).powerstats.speed}}<button class="botaoveloci" @click="comparar(CardsID(2).powerstats.speed,CardsID(3).powerstats.speed)" > escolher </button>
+          </div>
+          <div class="formatarStatus">    
+              Durabilidade: {{CardsID(2).powerstats.durability}}<button @click="comparar(CardsID(2).powerstats.durability,CardsID(3).powerstats.durability)" > escolher </button>
+          </div>
+          <div class="formatarStatus">    
+              Poder: {{CardsID(2).powerstats.power}}<button class="botaopoder" @click="comparar(CardsID(2).powerstats.power,CardsID(3).powerstats.power)" > escolher </button>
+          </div>             
+          <div class="formatarStatus">    
+              Combate: {{CardsID(2).powerstats.combat}}<button class="botaocombate" @click="comparar(CardsID(2).powerstats.combat,CardsID(3).powerstats.combat)" > escolher </button>
+          </div>
+        </b-card-text>
       </b-card>  
       
     </div>
-      <div :card="CardsID(3)"   class="Cartas">
+    <div class="vs">
+      <h1> VS </h1>
+    </div>
+    <div :card="CardsID(3)"   class="Cartas">
       
    
       <b-card 
@@ -41,7 +56,7 @@
         :img-alt="CardsID(3).name"
         img-top
         tag="article"
-        style="max-width: 13rem;"
+        style="max-width: 16rem;"
         class="md-2"
 
         >
@@ -129,12 +144,24 @@ export default {
   font-family: "theboldfont";
   src: url("../assets/theboldfont.ttf");
 }
+@font-face {
+  font-family: "SSF4";
+  src: url("../assets/SSF4 ABUKET.ttf");
+}
 .Area_cartas{
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 117px;
+  margin-top: 30px;
+  justify-content: center;
   
+}
+.vs{
+  padding: 180px 100px;
+}
+h1{
+  font-family: "SSF4";
+  font-size: 90px;
 }
 .Cartas{
   display: flex;
@@ -143,9 +170,40 @@ export default {
   font-family:"Beckman-free";
   height:410px;
 }
-
+.Cartas1{
+  display: flex;
+  margin:5px;
+  text-align:center;
+  font-family:"Beckman-free";
+  height:auto;
+  width: auto;
+}
+.Cartas1Text{
+  width: auto;
+  text-align: left;
+}
+.formatarStatus{
+  display: inline-flex;
+  margin: 0;
+  padding: 2px;
+  
+}
+.botaointel{
+  margin-left: 3px;
+}
+.botaoforça{
+  margin-left: 55px;
+}
+.botaoveloci{
+  margin-left: 17px;
+}
+.botaopoder{
+  margin-left: 56px;
+}
+.botaocombate{
+  margin-left: 30px;
+}
 #info_card{
-  display:flex;
   justify-content:center;
   font-family:"Conversation" ;
   font-size:1.5EM;
@@ -184,6 +242,11 @@ export default {
 	opacity: 1;
 	color: #010102;
   background-attachment: fixed;
+}
+button{
+  font-size: 15px;
+  padding: 0px 0px;
+  margin-left: 2px;
 }
 
 
