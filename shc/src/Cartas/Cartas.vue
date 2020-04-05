@@ -5,6 +5,14 @@
   <br>
   <br>
     <addCart style="margin-top:30px;"/> 
+
+    <div>
+      <form>
+      <select style="width:300px;color:black;">
+        <option v-for ="card in allCards" :key="card.id" class="Cartas"> {{card.name}} </option>
+      </select>
+      </form>
+    </div>
   <section class="Area_cartas">
     
     <div v-for ="card in allCards" :key="card.id" class="Cartas">
