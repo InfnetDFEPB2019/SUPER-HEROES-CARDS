@@ -19,29 +19,22 @@
         tag="article"
         style="max-width: 13rem;"
         class="md-2"
+
         >
         <b-card-text>
-              Inteligência: {{CardsID(2).powerstats.intelligence}} 
-              Força: {{CardsID(2).powerstats.strength}}
-              Velocidade: {{CardsID(2).powerstats.speed}}
-              Durabilidade: {{CardsID(2).powerstats.durability}}
-              Poder: {{CardsID(2).powerstats.power}}
-              Combate: {{CardsID(2).powerstats.combat}}
-        </b-card-text>
-      </b-card>      
+              Inteligência: {{CardsID(2).powerstats.intelligence}} <br><button @click="comparar(CardsID(2).powerstats.intelligence,CardsID(3).powerstats.intelligence)" > escolher </button>
+              Força: {{CardsID(2).powerstats.strength}}<br><button @click="comparar(CardsID(2).powerstats.strength,CardsID(3).powerstats.strength)" > escolher </button>
+              Velocidade: {{CardsID(2).powerstats.speed}}<br><button @click="comparar(CardsID(2).powerstats.speed,CardsID(3).powerstats.speed)" > escolher </button>
+              Durabilidade: {{CardsID(2).powerstats.durability}}<br><button @click="comparar(CardsID(2).powerstats.durability,CardsID(3).powerstats.durability)" > escolher </button>
+              Poder: {{CardsID(2).powerstats.power}}<br><button @click="comparar(CardsID(2).powerstats.power,CardsID(3).powerstats.power)" > escolher </button>
+              Combate: {{CardsID(2).powerstats.combat}}<button @click="comparar(CardsID(2).powerstats.combat,CardsID(3).powerstats.combat)" > escolher </button>
+            </b-card-text>
+      </b-card>  
+      
     </div>
-
-        <div id="escolha">
-              Escolha o status a comparar
-              <br><button @click="comparar(CardsID(2).powerstats.intelligence,CardsID(3).powerstats.intelligence)" > Inteligencia </button>
-              <br><button @click="comparar(CardsID(2).powerstats.strength,CardsID(3).powerstats.strength)" > Força </button>
-              <br><button @click="comparar(CardsID(2).powerstats.speed,CardsID(3).powerstats.speed)" >Velocidade </button>
-              <br><button @click="comparar(CardsID(2).powerstats.durability,CardsID(3).powerstats.durability)" > Durabilidade </button>
-              <br><button @click="comparar(CardsID(2).powerstats.power,CardsID(3).powerstats.power)" > Poder </button>
-              <br><button @click="comparar(CardsID(2).powerstats.combat,CardsID(3).powerstats.combat)" > Combate </button>
-              </div>
-
       <div :card="CardsID(3)"   class="Cartas">
+      
+   
       <b-card 
         :title="CardsID(3).name"
         :img-src="CardsID(3).image.url"
@@ -139,9 +132,6 @@ export default {
 .Area_cartas{
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
-  margin: 0 auto;
-  width:1200px;
   padding: 10px;
   margin-top: 117px;
   
@@ -196,12 +186,7 @@ export default {
   background-attachment: fixed;
 }
 
-#escolha{
-  display:block;
-  margin-top:60px;
-  width:200px;
-  color:white;
-}
+
 
 
 </style>
