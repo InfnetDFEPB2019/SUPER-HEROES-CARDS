@@ -57,7 +57,8 @@ const state = {
 ]
 };
 const getters = {
-  allCards: state => state.cards
+  allCards: state => state.cards,
+  CardsID: (state) => (id) => (state.cards.filter(t => t.id == id))[0]
 };
 const actions = {
   fetchCards({ commit }) {
