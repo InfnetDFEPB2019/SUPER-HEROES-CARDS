@@ -137,6 +137,28 @@ p{
   margin-bottom:10px;
 
 }
+#texto{
+  margin:0 auto;
+  display:block;
+  width: 70%;
+  margin-bottom:5px;
+  text-align:justify;
+}
+.areasobre{
+  background-color:rgba(133, 12, 12);
+}
+@media only screen and (max-width: 600px) {
+  
+  h1{
+    font-size:1.8EM;
+  }
+  h2{
+    font-size: 1EM;
+  }
+  p{
+    font-size:0.8EM;
+  }
+}
 
 
 

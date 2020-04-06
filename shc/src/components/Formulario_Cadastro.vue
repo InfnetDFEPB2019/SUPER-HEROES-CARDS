@@ -170,6 +170,28 @@ h1 {
   margin:0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  
+  h1{
+    font-size:1.5EM;
+  }
+  h2{
+    font-size:0.8EM;
+  }
+  h3{
+    font-size:0.8Em;
+  }
+  #b_login{
+    font-size:0.8EM;
+  }
+  #b_recuperar{
+    font-size:0.8EM;
+  }
+  #b_cadastro{
+    font-size:0.8EM;
+  }
+ 
+}
 
 
 

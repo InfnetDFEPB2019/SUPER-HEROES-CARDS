@@ -160,6 +160,7 @@ p{
   border-radius:100%;
   position:absolute;
   transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+  margin-bottom:10px;
 }
 .my-super-cool-btn .dot:nth-child(1){
   top:50px;
@@ -353,6 +354,18 @@ p{
     opacity:0;
   }
 }
-
+@media only screen and (max-width: 600px) {
+   .my-super-cool-btn span{
+     width:100px;
+     height:100px;
+     font-size:1EM;
+  }
+  h1{
+    font-size:1.8EM;
+  }
+  p{
+    font-size: 1EM;
+  }
+}
 
 </style>

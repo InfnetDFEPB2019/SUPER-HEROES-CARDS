@@ -255,6 +255,12 @@ button{
 }
 
 
-
+@media only screen and (max-width: 600px) {
+  
+  h1{
+    font-size:3EM;
+  }
+ 
+}
 
 </style>
