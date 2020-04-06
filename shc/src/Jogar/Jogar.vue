@@ -115,7 +115,12 @@ export default {
     
     
   },
-  computed: mapGetters(["allCards","CardsID"]),
+  computed: {
+    ...mapGetters(["allCards","CardsID"]),
+   
+    
+    
+    },
   
   components: {
     HeaderJogo,

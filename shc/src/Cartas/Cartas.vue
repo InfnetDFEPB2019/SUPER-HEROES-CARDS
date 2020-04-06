@@ -86,11 +86,13 @@ export default {
     addCart
     
   },
+  
   data() {
       return {
         modalShow: false
       }
-    }
+    },
+    
   }
 
 
