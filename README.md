@@ -29,7 +29,8 @@ Fonte para textos padrões no site:
 https://www.dafont.com/pt/biko.font?text=Em+um+certo+Deus+veio+e+lhe+disse%3A+filho%2C+venha+c%E1&psize=s&back=theme
 
 
-
+fonte: navbar:18px , p:1.1rem , 
+cor: preto e branco
 Cores:
 NavegationBar - #c8301e com gradiente variante
 
